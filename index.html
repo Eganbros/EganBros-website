@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        (function (m, a, z, e) {
+          var s, t;
+          try {
+            t = m.sessionStorage.getItem('maze-us');
+          } catch (err) {}
+        
+          if (!t) {
+            t = new Date().getTime();
+            try {
+              m.sessionStorage.setItem('maze-us', t);
+            } catch (err) {}
+          }
+        
+          s = a.createElement('script');
+          s.src = z + '?t=' + t + '&apiKey=' + e;
+          s.async = true;
+          a.getElementsByTagName('head')[0].appendChild(s);
+          m.mazeUniversalSnippetApiKey = e;
+        })(window, document, 'https://snippet.maze.co/maze-universal-loader.js', 'e0a92543-d818-43cc-a158-5aecd97d6336');
+        </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JL753SVNLF"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-JL753SVNLF');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eedna - Portfolio</title>
+
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="icon" href="https://github.com/em-egan/GA-Final_Project/blob/main/5%20Logo/favicon.png?raw=true" type="image/x-icon">
+
+</head>
+
+<body>
+    <div class="top-part">
+        <nav class="top-nav">
+            <div class="topleft">
+                <a href="./index.html"><img class="logo-img" src="https://raw.githubusercontent.com/em-egan/GA-Final_Project/c71b33300d6b2345d21eea276bc5ad9b5f4fbd21/5%20Logo/logo-small.svg" alt="logo"></a>
+            </div>
+
+            <div class="topright">
+                <a href="#projects">Projects</a>
+                <a href="./info.html">Info</a>
+                <img class="hamburger-img" src="https://raw.githubusercontent.com/em-egan/GA-Final_Project/72ac1a0315ba5040f7ec9acf95c122f3a8da8e05/3%20UI%20Elements/Hamburger2.svg" alt="Hamburger Menu">
+            </div>
+        </nav>
+
+        <aside id="menu">
+            <div class="menu-links" id="one">
+                <a href="#projects">Projects</a>
+                <a href="./info.html">Info</a>
+            </div>
+            <div class="button" id="menu-close"><img src="https://raw.githubusercontent.com/em-egan/GA-Final_Project/b6af046d0e919ef7837076864282e422f0faefce/3%20UI%20Elements/close%20white.svg" alt="close">
+            </div>
+        </aside>  
+
+    <main>
+
+    </main>
+    
+    <footer>
+        <div class="bottomleft">
+            <img class="logo-img" src="" alt="logo">
+        </div>
+        <div class="bottomright">
+            <a href="">Linkedin</a>
+            <a href="mailto:emi.egan@icloud.com">Email</a>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</body>

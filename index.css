@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+}
+
+.top-part{
+    font-family: 'Inter';
+    display: flex;
+    width: 108rem;
+    padding: 1.625rem 10rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12.5rem;
+
+}
