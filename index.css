@@ -189,7 +189,7 @@ a {
 
 /* Change Color of Links on Hover */
 .dropdown-content a:hover {
-    /* color: #AB1D22;  */
+    color: #AB1D22; 
     font-weight: 500;
     transform: translateX(10px);
     transition: transform 0.3s ease;
