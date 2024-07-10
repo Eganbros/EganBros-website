@@ -1,14 +1,1137 @@
-body{
+body {
     margin: 0;
 }
 
-.top-part{
-    font-family: 'Inter';
+.right-nav .hamburger-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.top-nav {
     display: flex;
-    width: 108rem;
-    padding: 1.625rem 10rem;
+    width: auto;
+    padding: 1.625rem 8%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-nav {
+    display: flex;
+    width: 12.3125rem;
+    padding: 0.625rem;
     flex-direction: column;
     align-items: flex-start;
-    gap: 12.5rem;
+    gap: 0.625rem;
+}
+
+.middle-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--Spacing-Spacing-3Xl, 2.5rem);
+}
+
+.nav-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.125rem;
+}
+
+.nav-alignment {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.3rem;
+    animation-timing-function: ease-out;
+    animation-duration: 300ms;
+}
+
+h3 {
+    color: var(--Navy, #211E3E);
+    font-family: Inter;
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.375rem;
+    text-decoration: none;
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--Spacing-Spacing-3Xl, 2.5rem);
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #1e1e4d;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    height: 3.25rem;
+    padding: var(--Spacing-Spacing-none, 0rem) var(--Spacing-Spacing-2Xl, 2rem);
+    justify-content: center;
+    align-items: center;
+    gap: var(--Spacing-Spacing-Xs, 0.25rem);
+    border-radius: 1.875rem;
+    background: var(--Navy, #211E3E);
+    cursor: pointer;
+}
+
+.text {
+    color: var(--Text-Text-CTA, #FFF);
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.375rem; /* 129.412% */
+}
+
+.button.arrow {
+    background-color: #fff;
+    border-radius: 1.875rem;
+    border: 3px solid var(--Red, #AB1D22);
+    width: 91.164px;
+    height: 3.25rem;
+}
+
+.button .arrow-icon {
+    display: none;
+    vertical-align: middle;
+}
+
+.button.hovered .text {
+    display: none;
+}
+
+.button.hovered .arrow-icon {
+    display: inline-block;
+}
+
+.main-header-text .button {
+    background-color: none;
+    border-radius: 1.875rem;
+    border: 3px solid var(--Text-White, #FFF);
+}
+
+.main-header-text .button:hover {
+    background-color: #a70000;
+}
+
+a {
+    display: inline-block;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-decoration: none;
+    width: auto;
+}
+
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: max-content;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: var(--Spacing-Spacing-3Xl, 1rem) var(--Spacing-Spacing-Lg, 1rem) var(--Spacing-Spacing-2Xl, 0.8rem);
+    border-radius: 0.875rem;
+    box-shadow: -1px 8px 8px 0px rgba(0, 0, 0, 0.08);
+    left: 0; /* Initial position */
+    transition: left 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Show the Dropdown Menu on Hover or Click */
+.dropdown:hover .dropdown-content,
+.dropdown-content.show {
+    display: block;
+    left: -30px; /* Adjust this value as needed */
+}
+
+/* Links Inside the Dropdown */
+.dropdown-content a {
+    display: flex;
+    height: 3rem;
+    padding: var(--Spacing-Spacing-Sm, 0.5rem) 0rem;
+    justify-content: left;
+    align-items: center;
+    color: var(--Text-Text-Secondary, #555454);
+    font-family: Inter;
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 1.375rem; /* 129.412% */
+    padding-left: 20px; /* Add space between stroke and text */
+    padding-right: 20px; /* Increase padding on the right */
+    position: relative; /* Add this to position the stroke */
+}
+
+.contact-button h3:hover {
+    color: var(--Red, #AB1D22);
+}
+
+/* Change Color of Links on Hover */
+.dropdown-content a:hover {
+    /* color: #AB1D22;  */
+    font-weight: 500;
+    transform: translateX(10px);
+    transition: transform 0.3s ease;
+}
+
+/* Change Color of Links on Hover */
+.nav-section h3:hover {
+    color: var(--Red, #AB1D22);
+}
+
+.dropdown-content a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 27%; /* Adjust the top value to reduce height */
+    bottom: 27%; /* Adjust the bottom value to reduce height */
+    width: 5px; /* Width of the stroke */
+    background-color: #AB1D22; /* Color of the stroke */
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+}
+
+
+.dropdown-content a:hover::before {
+    transform: scaleY(1);
+}
+
+/* Additional Styles for the Dropdown Button */
+.dropbtn {
+    color: #211E3E;
+    padding: 0px 0px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+/* Chevron Icon */
+.chevron-icon {
+    transition: content 0.3s;
+}
+
+/* Change Color of Links and Chevron Icon when Dropdown is Visible */
+.nav-section h3:hover,
+.dropdown-content.show .dropbtn {
+    color: #AB1D22; /* Red color */
+}
+
+.nav-section.dropdown:hover #chevron-icon-services,
+#chevron-icon-services.show {
+    content: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/72f2a3399ed79c5d4a89369affba244a280ca4a4/Content/chevron-down-red.svg');
+}
+
+.chevron-icon.show {
+    content: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/72f2a3399ed79c5d4a89369affba244a280ca4a4/Content/chevron-down-red.svg'); /* Change chevron icon */
+}
+
+.right-nav {
+    width: 13rem;
+}
+
+.container a {
+    flex: 1; /* Example: Ensure <a> tags fill the container in a flex layout */
+}
+
+#chevron-icon-services {
+    content: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/c6a48ae561e9f646fda3cede8d693e34ae241e14/Content/chevron-down.svg');
+}
+
+#chevron-icon-services.show {
+    content: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/72f2a3399ed79c5d4a89369affba244a280ca4a4/Content/chevron-down-red.svg');
+}
+
+#chevron-icon-case-studies {
+    content: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/c6a48ae561e9f646fda3cede8d693e34ae241e14/Content/chevron-down.svg');
+}
+
+#chevron-icon-case-studies.show {
+    content: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/72f2a3399ed79c5d4a89369affba244a280ca4a4/Content/chevron-down-red.svg');
+}
+
+#chevron-icon-about {
+    content: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/c6a48ae561e9f646fda3cede8d693e34ae241e14/Content/chevron-down.svg');
+}
+
+#chevron-icon-about.show {
+    content: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/72f2a3399ed79c5d4a89369affba244a280ca4a4/Content/chevron-down-red.svg');
+}
+
+.button.hovered .text {
+    display: none;
+}
+
+.button.hovered .arrow-icon {
+    display: inline-block;
+}
+
+.chevron-icon.show {
+    content: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/72f2a3399ed79c5d4a89369affba244a280ca4a4/Content/chevron-down-red.svg'); /* Change chevron icon */
+}
+
+/* Change title color to red when dropdown is visible */
+.nav-section.dropdown:hover .dropbtn,
+.dropdown-content.show .dropbtn,
+.nav-section .dropbtn.active {
+    color: #AB1D22; /* Red color */
+}
+
+
+Hamburger Icon Styling
+.hamburger-icon {
+    width: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.hamburger-icon img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+
+/* Side Menu Styling */
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #1c1c2b;
+    overflow-x: hidden;
+    transition: 0.5s;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    padding-top: 20px;
+    opacity: 0.96;
+
+}
+
+.side-menu.open {
+    width: 380px; /* Adjust this value to increase the size of the side menu */
+}
+
+.side-menu .menu-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 8%;
+}
+
+
+
+/* Close Icon Styling to Match Hamburger Icon Position */
+.close-icon {
+    font-size: 36px;
+    cursor: pointer;
+    color: #ffffff;
+    position: fixed;
+    top: 45px;
+    right: 22px;
+    padding-right: 6%;
+    z-index: 1001; /* Ensure it's above the side menu */
+    display: none;
+}
+
+.side-menu .menu-links {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 40px;
+    gap: 1rem;
+    margin-top: 60px; /* Adjust to avoid overlap with close icon */
+}
+
+.side-menu .menu-links h3 {
+    padding: 0px 0px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 22px;
+    color: #FFFF;
+    margin-bottom: 10px; 
+}
+
+.side-menu .menu-links a {
+    padding: 8px 0;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative; /* Add this to position the stroke */
+    padding-left: 20px; /* Add this to create space between the stroke and the text */
+}
+
+
+.side-menu .menu-links a:hover {
+    font-weight: 500;
+    transform: translateX(10px);
+    transition: transform 0.3s ease;
+}
+
+.side-menu .menu-links a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px; /* Adjust the width of the stroke */
+    background-color: #AB1D22; /* Adjust the color of the stroke */
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+}
+
+.side-menu .menu-links a:hover::before {
+    transform: scaleY(1);
+}
+
+
+main {
+    display: flex;
+    width: auto;
+    align-items: flex-start;
+    background: var(--Navy, #211E3E);
+}
+
+.main-header-text {
+    display: flex;
+    height: 29.3125rem;
+    min-width: 32rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding-left: 8%;
+    padding-right: 0%;
+}
+
+.header-text-top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-Lg, 1rem);
+}
+
+h1 {
+    color: var(--Text-Text-Inverted, #FFF);
+    font-family: Inter;
+    font-size: 2.8125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
+}
+
+.header-text-top h3 {
+    color: var(--Text-Text-CTA, #FFF);
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.75rem; /* 140% */
+}
+
+.main-header-text .contact-button {
+    border-radius: 1.875rem;
+    border: 3px solid var(--Text-White, #FFF);
+}
+
+.header-image {
+    width: 100%;
+    height: 29.5rem;
+    background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/623649001e6d632053766a6bf1f94a92351defe2/Content/main%20banner-right-image%201.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h2 {
+    color: var(--Navy, #211E3E);
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.75rem; /* 116.667% */
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.partner-section {
+    display: flex;
+    width: auto;
+    padding: 3.75rem 10rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.625rem;
+    background: #FFF;
+    height: 100%;
+}
+
+.partner-section-top-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5625rem;
+}
+
+.partner-section-top-text h3,
+.partner-section-bottom h3 {
+    color: var(--Text-Text-Secondary, #474747);
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.5rem; /* 180% */
+}
+
+.partners-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4.64263rem;
+    opacity: 0.5;
+}
+
+.partner-section-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--Spacing-Spacing-2Xl, 2rem);
+    height: 100%;
+}
+
+.sentence {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--Spacing-Spacing-Sm, 0.5rem);
+}
+
+.sentence .bold {
+    font-weight: 600;
+}
+
+.partners-logo img {
+    mix-blend-mode: luminosity;
+    filter: grayscale(100%);
+}
+
+h4 {
+    color: var(--Navy, #211E3E);
+    text-align: center;
+    font-family: Inter;
+    font-size: 2.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 114%; /* 2.9925rem */
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+h5 {
+    color: var(--Text-Text-Tertiary, #7D7D7D);
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.9375rem; /* 155% */
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.category-title {
+    width: 45.125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--Spacing-Spacing-Lg, 1rem);
+}
+
+.services {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3.75rem;
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3.75rem;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.card {
+    border-radius: 1.25rem;
+    background: var(--Neutrals-Cards, #FFF);
+    box-shadow: 0px 2px 5px 0.256px rgba(0, 0, 0, 0.08);
+    width: auto;
+    min-width: 500px;
+    padding: 0;
+    text-align: left;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 13rem;
+    object-fit: cover;
+}
+
+.card-text img {
+    width: 24px;
+    height: 25px;
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+    gap: var(--Spacing-Spacing-Md, 0.75rem);
+    align-self: stretch;
+    width: 100%;
+}
+
+.card p {
+    color: #666666;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+p {
+    color: #666666;
+    font-family: Inter;
+    font-size: 0.9em;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    width: auto;
+    margin: 0;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+}
+
+.card-text {
+    display: flex;
+    padding: 1.5rem var(--Spacing-Spacing-Xl, 1.5rem) var(--Spacing-Spacing-Xl, 1.5rem) var(--Spacing-Spacing-Xl, 1.5rem);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    align-self: stretch;
+    width: auto;
+}
+
+.learn-more {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-self: stretch;
+    padding-top: 0.2rem;
+}
+
+.learn-more img {
+    width: 1.71875rem;
+    height: 0.875rem;
+}
+
+.learn-more h5 {
+    color: var(--Red, #AB1D22);
+    font-family: Inter;
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.375rem; /* 129.412% */
+}
+
+.deployment,
+.feedback,
+.footer-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.partners-logos,
+.service-items,
+.feedback-items,
+.certifications {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.deployment {
+    text-align: center;
+    background: #fff;
+    padding: 6rem 8rem 8.75rem 10rem;
+    align-items: center;
+    height: auto;
+}
+
+.deployment h4 {
+    color: var(--Text-Text-Secondary, #474747);
+    font-family: Inter;
+    font-size: 2.3125rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    margin: 20px;
+    margin-bottom: 5rem; /* Increased bottom margin */
+}
+
+.deployment-stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stat {
+    text-align: center;
+    margin: 0 20px;
+    flex: 1;
+}
+
+.stat h3 {
+    color: var(--Navy, #211E3E);
+    font-family: Inter;
+    font-size: 2.8125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.stat p {
+    color: var(--Text-Text-Tertiary, #7D7D7D);
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 2.25rem; /* 180% */
+}
+
+.divider {
+    width: 0.5px;
+    height: 40px;
+    background: #ccc;
+}
+
+.feedback {
+    display: flex;
+    padding: 5rem 10rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.75rem;
+    height: auto;
+    background: #F5F7FB;
+}
+
+.feedback-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.feedback-item {
+    display: flex;
+    width: 26.875rem;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--Spacing-Spacing-Xl, 1.5rem);
+}
+
+.feedback h4 {
+    color: var(--Navy, #211E3E);
+    font-family: Inter;
+    font-size: 2.3125rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.feedback-item img {
+    width: 11.25rem;
+    height: 11.25rem;
+}
+
+.feedback-item p {
+    width: 22rem;
+}
+
+.partner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--Spacing-Spacing-Lg, 1rem);
+}
+
+.partner-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner-name h3 {
+    color: var(--Navy, #211E3E);
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.25rem; /* 180% */
+}
+
+.partner-name p {
+    color: var(--Navy, #211E3E);
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.375rem; /* 129.412% */
+}
+
+.certifications {
+    display: flex;
+    width: auto;
+    padding: 6.25rem 10rem;
+    justify-content: center;
+    align-items: center;
+    gap: 11.25rem;
+    mix-blend-mode: luminosity;
+    filter: grayscale(100%);
+}
+
+.certification-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2065rem;
+    width: 6rem;
+}
+
+.certification-details p {
+    text-align: center;
+}
+
+.certification-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+footer {
+    background-color: #1c1c2b;
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 8%;
+    margin-right: 8%;
+    height: auto;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--Borders-Secondary-Icons, #7D7D7D);
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    height: auto;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--Text-Text-Inverted, #FFF);
+    font-family: Inter;
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.375rem; /* 129.412% */
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    color: var(--Text-Text-Inverted, #FFF);
+    font-family: Inter;
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 1.375rem; /* 129.412% */
+    height: auto;
+}
+
+.footer-column ul li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: auto;
+}
+
+.footer-column ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #C6C4C4;
+    font-weight: 250;
+}
+
+li.animate-link:hover {
+    transform: translateX(10px);
+    transition: transform 0.3s ease;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+    margin-bottom: 40px;
+    margin-left: 8%;
+    margin-right: 8%;
+    height: auto;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: var(--Text-Text-CTA, #FFF);
+    text-align: center;
+    font-family: Inter;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.25rem; /* 133.333% */
+}
+
+.footer-logo {
+    width: 6.5rem;
+    height: 3.66488rem;
+}
+
+
+
+
+
+@media screen and (max-width: 1930px) {
+    .card {
+        min-width: 400px;
+    }
+}
+
+@media screen and (max-width: 1676px) {
+    .header-image {
+        width: 100%;
+        height: 29.5rem;
+        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/aa440f0b2dda4ac1892252b8240081b014dcf993/Content/main%20banner-right-image%202.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 1578px) {
+    .header-image {
+        width: 100%;
+        height: 29.5rem;
+        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/a11c2569af252036f47c3c7da709fd0e30b30b0a/Content/main%20banner-right-image%203.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 1572px) {
+    .card {
+        min-width: 300px;
+    }
+}
+
+@media screen and (max-width: 1520px) {
+    .header-image {
+        width: 100%;
+        height: 29.5rem;
+        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/5a41b6cc12ab42a62f08ffc9134d0b33f6c57818/Content/main%20banner-right-image%204.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 1345px) {
+    .header-image {
+        width: 100%;
+        height: 29.5rem;
+        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/cd59f059d56d0722c23b1618eb348ad42f15d43e/Content/main%20banner-right-image%205.svg');
+    }
+}
+
+@media screen and (max-width: 1160px) {
+
+
+    h1{
+        font-size: 2.3rem;
+
+    }
+
+    .main-header-text{
+        min-width: 27rem;
+    }
+
+    .main-header-text .button {
+        border: 2px solid
+
+}
+
+}
+
+@media screen and (max-width: 1110px) {
+
+    .right-nav .hamburger-icon {
+        display: inline-block;
+    }
+
+    .right-nav a{
+        display: none;
+    }
+
+    .stroke1{
+        display: none;
+    }
+
+    .right-nav {
+        width: 12.3125rem;
+    }
+
+    .middle-nav{
+        display: none;
+    }
+
+    h2{
+        font-size: 1.2rem;
+    }
+
+
+    .partner-section-top-text h3, .partner-section-bottom h3 {
+        font-size: 1.1rem;
+    }
+
+    .partners-logo img{
+        width: 80%;
+        height: 10%;
+    }
+
+    .partners-logo{
+        width: 30%;
+        gap: 25%;
+    }
+
+    .partner-section-bottom{
+        width: 100%;
+        height: 40%;
+    }
+
+    .partner-section {
+        padding: 3.75rem 8%;
+    }
+
+
+
+}
+
+@media screen and (max-width: 1070px) {
+    .header-image {
+        width: 100%;
+        height: 29.5rem;
+        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/9ecea5cfb8b1f6032cca7ccf391d4cf2318517dc/Content/main%20banner-right-image%206.svg');
+    }
+}
+
+@media screen and (max-width: 945px) {
+
+}
+
+@media screen and (max-width: 750px) {
+
+        .top-nav{
+        padding: 1.625rem 24px;
+    }
+
+    .main-header-text {
+        padding-left: 24px;
+    }
 
 }
