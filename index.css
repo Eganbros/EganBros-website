@@ -389,7 +389,7 @@ Hamburger Icon Styling
     display: block;
     transition: 0.3s;
     font-family: 'Inter', sans-serif;
-    font-weight: 300;
+    font-weight: 350;
     text-decoration: none;
     cursor: pointer;
     position: relative; /* Add this to position the stroke */
