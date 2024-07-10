@@ -32,50 +32,359 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eedna - Portfolio</title>
+    <title>Egan Bros.</title>
 
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <link rel="icon" href="https://github.com/em-egan/GA-Final_Project/blob/main/5%20Logo/favicon.png?raw=true" type="image/x-icon">
+    <link rel="icon" href="https://raw.githubusercontent.com/Eganbros/EganBros-website/c6a48ae561e9f646fda3cede8d693e34ae241e14/Content/Logo.svg" type="image/x-icon">
 
 </head>
 
 <body>
-    <div class="top-part">
-        <nav class="top-nav">
-            <div class="topleft">
-                <a href="./index.html"><img class="logo-img" src="https://raw.githubusercontent.com/em-egan/GA-Final_Project/c71b33300d6b2345d21eea276bc5ad9b5f4fbd21/5%20Logo/logo-small.svg" alt="logo"></a>
+
+    <nav class="top-nav">
+        <div class="left-nav">
+            <a href="./index.html"><img class="logo-img" src="https://raw.githubusercontent.com/Eganbros/EganBros-website/c6a48ae561e9f646fda3cede8d693e34ae241e14/Content/Logo.svg" alt="logo"></a>
+        </div>
+
+        <div class="middle-nav">
+            <div class="nav-section dropdown">
+                <div class="nav-alignment">
+                <h3 class="dropbtn">Services</h3>
+                <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/c6a48ae561e9f646fda3cede8d693e34ae241e14/Content/chevron-down.svg" alt="chevron" class="chevron-icon" id="chevron-icon-services">
+                </div>  
+                <div class="dropdown-content">
+                    <a href="#">Safety & Compliance</a>
+                    <a href="#">Plumbing Maintenance</a>
+                    <a href="#">Water Meter Installations</a>
+                    <a href="#">Confined Space Access Works</a>
+                    <a href="#">Electrical Maintenance</a>
+                    <a href="#">Car Charging Installation</a>
+                </div>
             </div>
 
-            <div class="topright">
-                <a href="#projects">Projects</a>
-                <a href="./info.html">Info</a>
-                <img class="hamburger-img" src="https://raw.githubusercontent.com/em-egan/GA-Final_Project/72ac1a0315ba5040f7ec9acf95c122f3a8da8e05/3%20UI%20Elements/Hamburger2.svg" alt="Hamburger Menu">
+            <div class="nav-section dropdown">
+                <div class="nav-alignment">
+                <h3 class="dropbtn">Case Studies</h3>
+                <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/c6a48ae561e9f646fda3cede8d693e34ae241e14/Content/chevron-down.svg" alt="chevron" class="chevron-icon" id="chevron-icon-case-studies">
+                </div>
+                <div class="dropdown-content">
+                    <a href="#">Case Study 1</a>
+                    <a href="#">Case Study 2</a>
+                    <a href="#">Case Study 3</a>
+                </div>
             </div>
+
+            <div class="nav-section dropdown">
+                <div class="nav-alignment">
+                <h3 class="dropbtn">About</h3>
+                <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/c6a48ae561e9f646fda3cede8d693e34ae241e14/Content/chevron-down.svg" alt="chevron" class="chevron-icon" id="chevron-icon-about">
+                </div>
+                <div class="dropdown-content">
+                    <a href="#">About Us</a>
+                    <a href="#">Meet The Team</a>
+                    <a href="#">Certifications</a>
+                    <a href="#">Our Offices</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="right-nav">
+            <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/c6a48ae561e9f646fda3cede8d693e34ae241e14/Content/Line.svg" alt="stroke" class="stroke1">
+
+            <a href="#" class="button" id="contactButton">
+                <span class="text">Contact Us</span>
+                <img class="arrow-icon" src="https://raw.githubusercontent.com/Eganbros/EganBros-website/d2a3b6c2af1869836f78226b48d8f30b279c1d54/Content/red-arrow-CTA.svg" alt="Arrow">
+            </a>
+            <div id="hamburgerMenu" class="hamburger-icon">
+                <img src="https://raw.githubusercontent.com/em-egan/GA-Final_Project/72ac1a0315ba5040f7ec9acf95c122f3a8da8e05/3%20UI%20Elements/Hamburger2.svg" alt="Menu">
+            </div>
+        </div>
+    </nav> 
+
+    <!-- Right Side Menu -->
+    <div id="rightSideMenu" class="side-menu">
+        <div class="menu-header">
+            <span id="closeMenu" class="close-icon">&times;</span>
+        </div>
+        <nav class="menu-links" id="menuLinks">
+            <!-- Links will be dynamically added here -->
         </nav>
+    </div>
 
-        <aside id="menu">
-            <div class="menu-links" id="one">
-                <a href="#projects">Projects</a>
-                <a href="./info.html">Info</a>
-            </div>
-            <div class="button" id="menu-close"><img src="https://raw.githubusercontent.com/em-egan/GA-Final_Project/b6af046d0e919ef7837076864282e422f0faefce/3%20UI%20Elements/close%20white.svg" alt="close">
-            </div>
-        </aside>  
 
     <main>
-
-    </main>
-    
-    <footer>
-        <div class="bottomleft">
-            <img class="logo-img" src="" alt="logo">
+        <div class="main-header-text">
+            <div class="header-text-top">
+            <h1>Plumbing & Electrical <br> Services for Residential <br>
+                And Commercial</h1>
+            <h3>Commitment to quality craftsmanship <br>and customer satisfaction. </h3>
+            </div>
+            <a href="#" class="button" id="contactButtonTwo">
+                <span class="text">Learn more</span>
+            </a>
         </div>
-        <div class="bottomright">
-            <a href="">Linkedin</a>
-            <a href="mailto:emi.egan@icloud.com">Email</a>
+
+        <div class="header-image">
+        </div>
+    </main>
+
+    <section class="partner-section">
+        <div class="partner-section-top-text">
+            <h2>We partner with some of the most important providers in Australia.</h2>
+            <h3>Trusted by more than 100,000 consumers in Victoria.
+            </h3>
+        </div>
+
+        <div class="partner-section-bottom">
+
+            <div class="partners-logo">
+                <img src="https://github.com/Eganbros/EganBros-website/blob/main/Content/partner%20logo/freedom%20fm.png?raw=true" alt="freedom fm logo" class="logo-height">
+                <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/b9c76d8e694d829930bdb40bc2af2548118df428/Content/partner%20logo/southeastwater.svg" alt="south east water logo">
+                <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/b9c76d8e694d829930bdb40bc2af2548118df428/Content/partner%20logo/homevictoria.svg" alt="homes victoria logo">
+                <img src="https://github.com/Eganbros/EganBros-website/blob/main/Content/partner%20logo/vms.png?raw=true" alt="vms logo"class="logo-height">
+            </div>
+
+            <div class="sentence">
+                <h3>Read our </h3>
+                <h3 class="bold">Customers Stories</h3>
+            </div>
+
+        </div>
+    </section>
+
+    
+    <section class="services">
+        
+        <div class="category-title">
+        <h4>Our Services</h4>
+        <h5>We specialise in a comprehensive range of services, from routine maintenance and repairs to complex installations and emergency solutions.</h5></div>
+
+        <div class="container">
+            <a href=""><div class="card">
+                <img src="https://github.com/Eganbros/EganBros-website/blob/main/Content/Main%20Categories/Safety%20&%20Compliance%20category.png?raw=true" alt="Safety & Compliance">
+                <div class="card-text">
+                    <div class="card-title">
+                        <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/2e276231547d8c5c901fc0d10b5072019db36e9d/Content/arrow-symbol.svg" alt="arrow-symbol">
+                    <h3>Safety & Compliance</h3>
+                    </div>
+                    <p>We offer comprehensive Safety & Compliance Checks to ensure everything is in proper working order and adheres to all relevant regulations.</p>
+
+                    <!-- <div class="learn-more">
+                        <h5>Learn more</h5>
+                        <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/7c9cc4edf04a845c4a20827891117725ae1bb545/Content/red-arrow.svg" alt="red-arrow">
+                    </div> -->
+                </div>
+            </div></a>
+            <a href=""><div class="card">
+                <img src="https://github.com/Eganbros/EganBros-website/blob/main/Content/Main%20Categories/Plumbing%20category.png?raw=true" alt="Plumbing Maintenance">
+                <div class="card-text">
+                    <div class="card-title">
+                        <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/2e276231547d8c5c901fc0d10b5072019db36e9d/Content/arrow-symbol.svg" alt="arrow-symbol">
+                    <h3>Plumbing Maintenance</h3>
+                    </div>
+                    <p>Our comprehensive plumbing maintenance services are designed to prevent issues before they arise, saving you time, money, and inconvenience.</p>
+                    <!-- <div class="learn-more">
+                        <h5>Learn more</h5>
+                        <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/7c9cc4edf04a845c4a20827891117725ae1bb545/Content/red-arrow.svg" alt="red-arrow">
+                    </div> -->
+                </div>
+            </div></a>
+            <a href=""><div class="card">
+                <img src="https://github.com/Eganbros/EganBros-website/blob/main/Content/Main%20Categories/water%20meter%20category.png?raw=true" alt="Water Meter Installations">
+                <div class="card-text">
+                    <div class="card-title">
+                        <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/2e276231547d8c5c901fc0d10b5072019db36e9d/Content/arrow-symbol.svg" alt="arrow-symbol">
+                    <h3>Water Meter Installations</h3>
+                    </div>
+                    <p>Installation of a wide range of water meters, including residential, commercial, and industrial meters. Integration with existing water supply systems.</p>
+                    <!-- <div class="learn-more">
+                        <h5>Learn more</h5>
+                        <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/7c9cc4edf04a845c4a20827891117725ae1bb545/Content/red-arrow.svg" alt="red-arrow">
+                    </div> -->
+                </div>
+            </div></a>
+
+            <a href=""><div class="card">
+                <img src="https://github.com/Eganbros/EganBros-website/blob/main/Content/Main%20Categories/confined%20space%20category.png?raw=true" alt="Confined Space Access Works">
+                <div class="card-text">
+                    <div class="card-title">
+                        <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/2e276231547d8c5c901fc0d10b5072019db36e9d/Content/arrow-symbol.svg" alt="arrow-symbol">
+                    <h3>Confined Space Access Works</h3>
+                    </div>
+                    <p>Our team is highly trained and equipped to handle the unique challenges associated with confined space environments.</p>
+                    <!-- <div class="learn-more">
+                        <h5>Learn more</h5>
+                        <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/7c9cc4edf04a845c4a20827891117725ae1bb545/Content/red-arrow.svg" alt="red-arrow">
+                    </div> -->
+                </div>
+            </div></a>
+
+            <a href=""><div class="card">
+                <img src="https://github.com/Eganbros/EganBros-website/blob/main/Content/Main%20Categories/electrical%20maintenance.png?raw=true" alt="Electrical Maintenance">
+                <div class="card-text">
+                    <div class="card-title">
+                        <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/2e276231547d8c5c901fc0d10b5072019db36e9d/Content/arrow-symbol.svg" alt="arrow-symbol">
+                    <h3>Electrical Maintenance</h3>
+                    </div>
+                    <p>We provide comprehensive electrical maintenance services designed to prevent issues and extend the lifespan of your equipment.</p>
+                    <!-- <div class="learn-more">
+                        <h5>Learn more</h5>
+                        <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/7c9cc4edf04a845c4a20827891117725ae1bb545/Content/red-arrow.svg" alt="red-arrow">
+                    </div> -->
+                </div>
+            </div></a>
+
+            <a href=""><div class="card">
+                <img src="https://github.com/Eganbros/EganBros-website/blob/main/Content/Main%20Categories/car%20charging%20category.png?raw=true" alt="Car Charging Installation">
+                <div class="card-text">
+                    <div class="card-title">
+                        <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/2e276231547d8c5c901fc0d10b5072019db36e9d/Content/arrow-symbol.svg" alt="arrow-symbol">
+                    <h3>Car Charging Installation</h3>
+                    </div>
+                    <p>Our team of certified electricians ensures that your EV charging station is installed safely, efficiently, and in compliance with all relevant regulations.</p>
+                    <!-- <div class="learn-more">
+                        <h5>Learn more</h5>
+                        <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/7c9cc4edf04a845c4a20827891117725ae1bb545/Content/red-arrow.svg" alt="red-arrow">
+                    </div> -->
+                </div>
+            </div></a>
+        </div>
+    </section>
+
+    <section class="deployment">
+        <h4>Consistent deployment at scale</h4>
+        <div class="deployment-stats">
+            <div class="stat">
+                <h3>2007</h3>
+                <p>+17 years of services</p>
+            </div>
+            <div class="divider"></div>
+            <div class="stat">
+                <h3>48</h3>
+                <p>Partners</p>
+            </div>
+            <div class="divider"></div>
+            <div class="stat">
+                <h3>+23M</h3>
+                <p>Revenue Generated</p>
+            </div>
+            <div class="divider"></div>
+            <div class="stat">
+                <h3>+250k</h3>
+                <p>Safety Completed Jobs</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="feedback">
+        <h4>Partners Feedback</h4>
+        <div class="feedback-items">
+            <div class="feedback-item">
+                <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/8d2bd0451fd9514284ae035a01cf7e526c0b6f80/Content/avatar%20photo/avatar%201.svg" alt="Lachlan Williams">
+                <div class="partner-text">
+                    <p>Egan Bros exceeded my expectations in every aspect, from the high-quality workmanship to the outstanding customer service.</p>
+                    <div class="partner-name">
+                    <h3>South East Water</h3>
+                    <p>Lachlan Williams</p>
+                    </div>
+                </div>
+            </div>
+            <div class="feedback-item">
+                <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/8d2bd0451fd9514284ae035a01cf7e526c0b6f80/Content/avatar%20photo/avatar%203.svg" alt="James Scrivens">
+                <div class="partner-text">
+                    <p>I am thoroughly impressed with the performance. The team consistently demonstrates a high level of professionalism and expertise.</p>
+                    <div class="partner-name">
+                    <h3>Homes Victoria</h3>
+                    <p>James Scrivens</p>
+                    </div>
+                </div>
+            </div>
+            <div class="feedback-item">
+                <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/8d2bd0451fd9514284ae035a01cf7e526c0b6f80/Content/avatar%20photo/avatar%202.svg" alt="Rebecca Albert">
+                <div class="partner-text">
+                    <p>The quality of both the plumbing and electrical work was outstanding, and they ensured everything was done to a high standard.</p>
+                    <div class="partner-name">
+                    <h3>Valley Maintenance</h3>
+                    <p>Rebecca Albert</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="certifications">
+        <div class="certification-item">
+            <div class="certification-details">
+                <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/b7f2e38cb9a6f9b5e6423dd2e5d734fce14ccb5d/Content/certifications/1%20Quality%20Assurance%201.svg" alt="quality-assurance-icon">
+                <p>Quality Assurance</p>
+            </div>
+            <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/b7f2e38cb9a6f9b5e6423dd2e5d734fce14ccb5d/Content/certifications/1%20iso%209001.svg" alt="Quality Assurance logo">
+        </div>
+
+        <div class="certification-item">
+            <div class="certification-details">
+                <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/b7f2e38cb9a6f9b5e6423dd2e5d734fce14ccb5d/Content/certifications/2%20environment%202.svg" alt="Environmental-Responsibility-icon">
+                <p>Environmental Responsibility</p>
+            </div>
+            <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/b7f2e38cb9a6f9b5e6423dd2e5d734fce14ccb5d/Content/certifications/2%20iso%2014001.svg" alt="Environmental Responsibility logo">
+        </div>
+
+        <div class="certification-item">
+            <div class="certification-details">
+                <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/b7f2e38cb9a6f9b5e6423dd2e5d734fce14ccb5d/Content/certifications/3%20commitment%20to%20safety.svg" alt="Commitment to Safety-icon">
+                <p>Commitment to Safety</p>
+            </div>
+            <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/b7f2e38cb9a6f9b5e6423dd2e5d734fce14ccb5d/Content/certifications/3%20iso%2045001.svg" alt="Commitment to Safety logo">
+        </div>
+        
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li class="animate-link"><a href="#">About</a></li>
+                    <li class="animate-link"><a href="#">Meet the Team</a></li>
+                    <li class="animate-link"><a href="#">Contact</a></li>
+                    <li class="animate-link"><a href="#">Certifications</a></li>
+                    <li class="animate-link"><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Services</h3>
+                <ul>
+                    <li class="animate-link"><a href="#">Safety & Compliance</a></li>
+                    <li class="animate-link"><a href="#">Plumbing Maintenance</a></li>
+                    <li class="animate-link"><a href="#">Water Meter Installations</a></li>
+                    <li class="animate-link"><a href="#">Confined Space Access Works</a></li>
+                    <li class="animate-link"><a href="#">Electrical Maintenance</a></li>
+                    <li class="animate-link"><a href="#">Car Charging Installation</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Case Studies</h3>
+                <ul>
+                    <li class="animate-link"><a href="#">Case name</a></li>
+                    <li class="animate-link"><a href="#">Case name</a></li>
+                    <li class="animate-link"><a href="#">Case name</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Careers</h3>
+                <ul>
+                    <li class="animate-link"><a href="#">Join Our Team</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Copyright 2024 Egan Bros. All rights reserved.</p>
+            <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/658b88d21e699d5d39882b004ade4840e3b7d005/Content/white%20logo.svg" alt="Egan Bros. Logo" class="footer-logo">
         </div>
     </footer>
+
 
     <script src="./index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
