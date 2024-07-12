@@ -5,6 +5,12 @@ body {
 
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 .right-nav .hamburger-icon {
     display: none;
     cursor: pointer;
@@ -1594,6 +1600,15 @@ li:hover {
     margin-top: 2rem; /* Add space after the third item */
 }
 
+.main-header-text {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0%;
+    padding-right: 0%;
+    min-width: auto;
+}
+
+
 }
 @media screen and (max-width: 560px) {
 
@@ -1605,8 +1620,6 @@ li:hover {
 
 .main-header-text {
     width: 100%;
-    margin-left: 24px;
-    margin-right: 24px;
 }
 
 .main-header-text h3 {
