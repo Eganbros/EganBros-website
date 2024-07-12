@@ -1412,6 +1412,8 @@ li:hover {
         background-image: url('https://github.com/Eganbros/EganBros-website/blob/main/Content/header%20Full%20image%20.jpeg?raw=true');
     }
 
+
+
     .picture-section {
         height: 8rem !important;
     }
@@ -1707,8 +1709,11 @@ h4 {
 
 .stat {
     flex: 1 1 100%; /* Full width for each stat */
-    margin: 0.6rem 0; /* Add margin for spacing */
-
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top:rem;
+    padding-bottom: 1rem;
+}
 }
 
 .partner-section-bottom{
