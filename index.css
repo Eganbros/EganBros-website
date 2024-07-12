@@ -1571,6 +1571,7 @@ li:hover {
         gap: 3rem;
     }
 
+
     .feedback-item:nth-child(3) {
         margin-top: 0rem; /* Add space after the third item */
     }
@@ -1597,6 +1598,8 @@ li:hover {
         line-height: 2rem;
     }
 
+    
+
 
 }
 
@@ -1613,6 +1616,7 @@ li:hover {
     padding-right: 0%;
     min-width: auto;
 }
+
 
 
 }
@@ -1714,7 +1718,7 @@ h4 {
     padding-top:rem;
     padding-bottom: 1rem;
 }
-}
+
 
 .partner-section-bottom{
     gap: var(--Spacing-Spacing-2Xl, 1rem);
@@ -1729,18 +1733,36 @@ h4 {
     width: 20%;
 }
 
+.feedback-items img{
+    width: 60%;
+
+}
+
+.feedback{
+    gap: 2rem;
+}
+
+.feedback-item{
+    gap: 0.6rem;
+}
+
 }
 
 @media screen and (max-width: 480px) {
+    
     .deployment h4 {
         font-size: 1.2rem;
     }
     .feedback h4 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .feedback-item img {
-        width: 70%;
+        width: 50%;
+        height: auto;
+    }
+    .feedback-item {
+        gap: 1rem;
     }
     
     .feedback {
