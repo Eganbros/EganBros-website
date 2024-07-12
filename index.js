@@ -128,3 +128,39 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Handle mobile navigation toggling
+    const hamburgerMenu = document.getElementById('hamburgerMenu');
+    const rightSideMenu = document.getElementById('rightSideMenu');
+    const closeMenu = document.getElementById('closeMenu');
+
+    hamburgerMenu.addEventListener('click', () => {
+        rightSideMenu.classList.add('open');
+        closeMenu.style.display = 'block';
+    });
+
+    closeMenu.addEventListener('click', () => {
+        rightSideMenu.classList.remove('open');
+        closeMenu.style.display = 'none';
+    });
+
+    document.addEventListener('click', (event) => {
+        if (!event.target.closest('#hamburgerMenu') && !event.target.closest('#rightSideMenu')) {
+            rightSideMenu.classList.remove('open');
+            closeMenu.style.display = 'none';
+        }
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const images = document.querySelectorAll('img');
+    images.forEach(img => {
+        if (img.clientWidth > window.innerWidth) {
+            img.style.width = '100%';
+            img.style.height = 'auto';
+        }
+    });
+});
+
+
