@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function loadMenuLinks() {
         menuLinks.innerHTML = ''; // Clear existing links
         const sections = middleNav.querySelectorAll('.nav-section');
-        sections.forEach(section => {
+        sections.forEach((section, index) => {
             const title = section.querySelector('.dropbtn').textContent;
             const links = section.querySelectorAll('.dropdown-content a');
             const sectionHeader = document.createElement('h3');
@@ -102,6 +102,29 @@ document.addEventListener('DOMContentLoaded', () => {
                 newLink.textContent = link.textContent;
                 menuLinks.appendChild(newLink);
             });
+            // Add a line stroke between sections, except after the last section
+            if (index < sections.length - 1) {
+                const lineStroke = document.createElement('div');
+                lineStroke.style.borderTop = '1px solid rgba(255, 255, 255, 0.2)'; // Style the line as needed
+                lineStroke.style.margin = '10px 0'; // Adjust margin as needed
+                menuLinks.appendChild(lineStroke);
+            }
         });
     }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const learnMoreLinks = document.querySelectorAll('.learn-more');
+
+    learnMoreLinks.forEach(link => {
+        link.addEventListener('mouseenter', () => {
+            link.style.color = '#AB1D22';
+            link.querySelector('img').style.transform = 'translateX(5px)';
+        });
+
+        link.addEventListener('mouseleave', () => {
+            link.style.color = '';
+            link.querySelector('img').style.transform = '';
+        });
+    });
 });
