@@ -1408,8 +1408,12 @@ li:hover {
     .header-image {
         order: 1;
         width: 100%;
-        height: 20rem;
+        height: 22rem;
         background-image: url('https://github.com/Eganbros/EganBros-website/blob/main/Content/header%20Full%20image%20.jpeg?raw=true');
+    }
+
+    .picture-section {
+        height: 8rem !important;
     }
 
     .text {
