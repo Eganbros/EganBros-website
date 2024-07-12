@@ -755,12 +755,14 @@ p {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap; /* Enable wrapping */
+
 }
 
 .stat {
     text-align: center;
     margin: 0 20px;
-    flex: 1;
+    flex: 1 1 20%; /* Adjust flex-grow, flex-shrink, and flex-basis */
 }
 
 .stat h3 {
@@ -1082,6 +1084,32 @@ li:hover {
     }
 }
 
+@media screen and (max-width: 1330px) {
+
+    .stat {
+        text-align: center;
+        margin: 0 0px;
+
+    }
+
+    .stat h3{
+        font-size: 2rem;
+    }
+
+    .stat p{
+        font-size: 1rem;
+    }
+
+    .deployment {
+        padding-left: 6%;
+        padding-right: 6%;
+        align-items: center;
+        height: auto;
+    }
+
+
+}
+
 @media screen and (max-width: 1160px) {
 
 
@@ -1198,6 +1226,40 @@ li:hover {
     }
 }
 
+@media screen and (max-width: 1020px) {
+    .deployment-stats {
+        flex-direction: row; /* Arrange in rows */
+        justify-content: center; /* Center the stats */
+        width: 80%;
+        margin: 0 auto; /* Center the deployment-stats */
+        gap: 1rem;
+    }
+
+    .deployment{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .deployment h4{
+        margin-bottom: 2rem;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        font-size: 2rem;
+    }
+
+    .stat {
+        flex: 1 1 45%; /* Adjust flex-basis for wrapping */
+        margin: 0px 0; /* Add margin for spacing */
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .divider {
+        display: none; /* Hide dividers */
+    }
+}
+
+
 @media screen and (max-width: 950px) {
 
     .main-header-text {
@@ -1291,6 +1353,10 @@ li:hover {
 
 }
 
+@media screen and (max-width: 7px) {
+
+}
+
 
 
 
@@ -1328,6 +1394,12 @@ li:hover {
         width: 84%;
     }    
 
+    .deployment h4 {
+
+        font-size: 1.8rem;
+
+    }
+
 }
 
 @media screen and (max-width: 730px) {
@@ -1339,6 +1411,8 @@ li:hover {
     .partner-section-bottom{
         width: 100%;
     }
+
+
 }
 
 
@@ -1418,7 +1492,36 @@ h4 {
     font-size: 1.6rem;
 }
 
+.deployment h4 {
+
+    font-size: 1.6rem;
+
 }
+
+.deployment-stats {
+    flex-direction: column; /* Arrange in a single column */
+    gap: 0rem;
+}
+
+.stat {
+    flex: 1 1 100%; /* Full width for each stat */
+    margin: 0.6rem 0; /* Add margin for spacing */
+
+}
+
+
+/* .main-header-text .button {
+    background-color: #a70000;
+} */
+}
+
+@media screen and (max-width: 480px) {
+    .deployment h4 {
+        font-size: 1.2rem;
+}
+
+}
+
 
 @media screen and (max-width: 430px) {
 
@@ -1478,6 +1581,8 @@ h4 {
     .card-title h3{
         font-size: 0.9rem;
     }
+
+
 
 }
 
