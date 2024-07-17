@@ -1,13 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Action button visible arrow on hover
-    const button = document.getElementById('contactButton');
+    const buttons = [
+        document.getElementById('contactButton'),
+    ];
 
-    button.addEventListener('mouseenter', () => {
-        button.classList.add('hovered', 'arrow');
+    // Ensure all buttons have the same width before any hover effect
+    const maxWidth = Math.max(...buttons.map(button => button.offsetWidth));
+    buttons.forEach(button => {
+        button.style.width = `${maxWidth}px`;
     });
 
-    button.addEventListener('mouseleave', () => {
-        button.classList.remove('hovered', 'arrow');
+    buttons.forEach(button => {
+        button.addEventListener('mouseenter', () => {
+            button.classList.add('hovered', 'arrow');
+        });
+
+        button.addEventListener('mouseleave', () => {
+            button.classList.remove('hovered', 'arrow');
+        });
     });
 
     // Dropdown menu chevron
