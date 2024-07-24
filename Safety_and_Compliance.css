@@ -96,6 +96,7 @@ h3 {
     border-radius: 1.875rem;
     background: var(--Navy, #211E3E);
     cursor: pointer;
+    
 
 }
 
@@ -759,6 +760,17 @@ ul{
     width: 100%; /* Ensures the buttons are full-width within their container */
 }
 
+.button.hovered, .get-started.hovered, .red.hovered, .letsTalk.hovered {
+    width: 100%; /* Maintain full width on hover */
+}
+
+.button.hovered .arrow-icon, .get-started.hovered .arrow-icon, .red.hovered .arrow-icon, .letsTalk.hovered .arrow-icon {
+    display: inline-block;
+}
+
+.button.hovered .text, .get-started.hovered .text-getstarted, .red.hovered .text, .letsTalk.hovered .text {
+    display: none;
+}
 
 .title-pricing {
     display: flex;
@@ -980,6 +992,19 @@ line-height: 1.25rem; /* 133.333% */
     width: 48rem;
 }
 
+.contact-us p{
+    color: var(--Text-Text-Secondary, #474747);
+    text-align: center;
+
+    /* Title/LargeTitle 2 - ExtraLight */
+    font-family: Inter;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 1.4;
+
+}
+
 .stroke-little{
     width: 2rem; /* Adjust the width as needed */
     height: 0.6rem; /* Adjust the height as needed */
@@ -991,6 +1016,180 @@ line-height: 1.25rem; /* 133.333% */
 }
 
 
+
+
+
+/* Why Choose Us? Section */
+.why-choose-us {
+    display: flex;
+    align-items: center;
+    padding: 6.25rem 8%;
+    background-color: #F5F7FB; /* Light grey background */
+    justify-content: flex-start;
+    gap: 5rem;
+}
+
+.contact-image {
+    flex: 0.8;
+    background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/be2a1f689e02fa04aeaa036568707ebb51c56fd1/Content/why-choose-us.svg'); /* Replace with the path to your image */
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(20% 0%, 100% 30%, 85% 100%, 26% 95%);
+    height: 400px; /* Adjust height as needed */
+}
+
+.contact-info {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    
+}
+
+.contact-info h2 {
+    color: var(--Navy, #211E3E);
+
+    /* Title/Title2 */
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.75rem; /* 116.667% */
+}
+
+.contact-info h3 {
+    font-family: 'Inter', sans-serif;
+    color: #7D7D7D; /* Grey color */
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.5;
+    padding-right: 5rem;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.contact-info ul li {
+    font-family: 'Inter', sans-serif;
+    color: #211E3E; /* Dark Navy color */
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 30px;
+}
+
+.contact-info ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.2rem; /* Adjust this value to align the icon vertically */
+    width: 20px; /* Width of the tick icon */
+    height: 20px; /* Height of the tick icon */
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="%23AB1D22" stroke-width="2" d="M4 12l5 5L20 7"/></svg>') no-repeat left center;
+    opacity: 60%;
+}
+
+
+
+
+
+
+/* Contact Us Section */
+
+
+.contact-us  {
+    display: flex;
+    padding: 6.25rem 8%;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    justify-content: flex-start
+}
+
+
+.contact-us h2 {
+    color: var(--Navy, #211E3E);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.75rem; /* 116.667% */
+    width: 12rem;
+
+}
+
+.contact-us p {
+    color: var(--Text-Text-Tertiary, #7D7D7D);
+
+    font-family: Inter;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 1.4;
+    margin: 0;
+    text-align: left;
+}
+
+
+
+#letsTalk {
+    display: flex;
+    padding: var(--Spacing-Spacing-none, 0rem) var(--Spacing-Spacing-2Xl, 2rem);
+    justify-content: center;
+    align-items: center;
+    gap: var(--Spacing-Spacing-Xs, 0.25rem);
+    align-self: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 5rem;
+    border: 3px solid var(--Navy, #211E3E);
+    background-color: #FFF;
+    height: 5rem;
+    width: auto; /* Set initial width */
+
+}
+
+#letsTalk .text, #letsTalk .arrow-icon {
+    transition: opacity 0.3s ease;
+}
+
+#letsTalk .arrow-icon {
+    display: none; /* Initially hide the arrow */
+}
+
+#letsTalk.hovered h2 {
+    color: #AB1D22;
+}
+
+#letsTalk.hovered .arrow-icon {
+    display: inline-block; /* Show arrow on hover */
+}
+
+#letsTalk:hover {
+    border-color: #AB1D22; /* Change border color to red on hover */
+    background-color: #AB1D22; /* Keep background color white */
+}
+
+#letsTalk:hover h2 {
+    color: #FFFF;
+}
+
+
+
+.contact-us .button:hover {
+    background-color: #1e1e4d; /* Background color on hover */
+    color: #FFFFFF; /* Text color on hover */
+}
+
+.contact-us .button .arrow-icon {
+    margin-left: 0.5rem; /* Space between text and arrow */
+}
 
 
 
@@ -1127,6 +1326,8 @@ li:hover {
 
 
 
+
+
 @media screen and (max-width: 1676px) {
     .header-image {
         width: 100%;
@@ -1150,8 +1351,6 @@ li:hover {
         padding-bottom: 1rem;
     }
 
-
-
     
 }
 
@@ -1165,6 +1364,11 @@ li:hover {
         background-position: center;
         background-size: cover;
     }
+
+    .contact-info h3 {
+        padding-right: 0rem;
+    }
+    
 }
 
 @media screen and (max-width: 1572px) {
@@ -1244,11 +1448,34 @@ li:hover {
 }
  
 
+@media screen and (max-width: 1266px) {
 
+    .why-choose-us {
+        gap: 3rem;
+        align-items: flex-start;
+    }
 
+    .contact-image {
+        flex: 0.4; /* Reduce the image size to 40% of the container's width */
+    }
 
+    
 
+    .contact-info {
+        flex: 0.6; /* Increase the space for the text to 60% of the container's width */
+        gap: 1ren;
+    }
 
+    .contact-info ul li {
+
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .contact-info {
+        max-width: 60%;
+    }
+}
 
 @media screen and (max-width: 1160px) {
 
@@ -1269,6 +1496,10 @@ li:hover {
     }
 
 }
+
+
+
+
 
 @media screen and (max-width: 1110px) {
 
@@ -1322,7 +1553,7 @@ li:hover {
         line-height: 1.6rem;
     }
 
-    .service-content ul li {
+    .service-content ul li, .contact-info h3 {
         font-size: 1.1rem;
     }
 
@@ -1331,7 +1562,7 @@ li:hover {
 
     }
 
-    .help-section h2 {
+    .help-section h2,   {
         font-size: 2.3rem;
 
     }
@@ -1359,6 +1590,12 @@ li:hover {
         width: 40rem;
     }
 
+    .contact-us p{
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+
+
     .commitment {
         padding-top: 4rem;
         padding-bottom: 4rem;
@@ -1370,6 +1607,10 @@ li:hover {
       
     line-height: 1.3;
 
+    }
+
+    .contact-info h2 {
+        font-size: 1.3rem;
     }
 }
 
@@ -1423,7 +1664,7 @@ li:hover {
         line-height: 1.4;
     }
 
-    .service-content ul li {
+    .service-content ul li, .contact-info h3 {
         font-size: 1rem;
     }
 
@@ -1440,7 +1681,7 @@ li:hover {
 
     }
 
-    .help-section h3 {
+    .help-section h3, .contact-info ul li  {
         font-size: 1rem;
     }
 
@@ -1463,6 +1704,12 @@ li:hover {
         font-size: 1.3rem;
         line-height: 1.4;
         width: 76%;
+    }
+
+
+    .contact-us p {
+        font-size: 1.3rem;
+        line-height: 1.4;
     }
 
     .commitment{
@@ -1568,7 +1815,7 @@ li:hover {
         align-items: center;
     }
 
-    .help-section h3{
+    .help-section h3 {
         text-align: center;
         width: 90%;
     }
@@ -1624,7 +1871,7 @@ li:hover {
         padding-left: 1rem;
     }
 
-    .help-section h3{
+    .help-section h3, .contact-info ul li  {
         width: 100%;
     }
 
@@ -1668,7 +1915,6 @@ li:hover {
         padding-right: 5px;
     }
 
- 
 
     h4 {
         font-size: 2rem;
@@ -1686,6 +1932,34 @@ li:hover {
         width: 80%;
     }
 
+    .contact-image {
+        flex: 0.35;
+        height: auto; /* Use auto to maintain aspect ratio */
+        min-height: 100%; /* Ensure the image container at least matches the parent's height */
+        background-size: cover; /* Ensure the image covers the container */
+        background-position: center; /* Center the image */
+        clip-path: none; /* Remove clip-path for a rectangular image */
+    }
+
+    .why-choose-us {
+        align-items: stretch; /* Align items to stretch to the same height */
+        gap: 2rem;
+    }
+
+    .contact-info ul li {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+
+
+    .contact-info {
+        gap: 1.3rem;
+    }
+
+    .contact-info h2 {
+        font-size: 1.1rem;
+    }
+
 }
 
 
@@ -1694,6 +1968,8 @@ li:hover {
     .help-section h3{
         width: 90%;
     }
+
+    
 }
 @media screen and (max-width: 705px) {
 
@@ -1770,7 +2046,7 @@ li:hover {
         width: auto;
     }
 
-    .service-content ul li {
+    .service-content ul li, .contact-info h3 {
         font-size: 1rem;
         width: auto;
     }
@@ -1878,6 +2154,11 @@ h4 {
 
 }
 
+.contact-info ul li  {
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+}
+
 .help-section{
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -1891,7 +2172,7 @@ h4 {
     text-align: center;
 }
 
-.commitment p{
+.commitment p, .contact-us p{
     font-size: 1.05rem;
     line-height: 1.4;
 }
@@ -1908,6 +2189,46 @@ h4 {
     height: 0.3rem;
 }
 
+
+.contact-info h2 {
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.contact-info ul li {
+    margin-bottom: 0rem;
+    width: fit-content;
+}
+
+
+.contact-image {
+    order: 1;               /* Ensure the image comes first */
+    width: 100%;            /* Full width */
+    height: auto;           /* Auto height to maintain aspect ratio */
+    min-height: 200px;      /* Ensure a minimum height */
+    clip-path: none;        /* Remove clip-path for full width display */
+    background-size: cover; /* Cover the full container */
+    background-position: center; /* Center the image */
+}
+
+.contact-info {
+    order: 2;               /* Ensure the text comes after the image */
+    padding: 0px;          /* Add some padding for spacing */
+    width: 100%;            /* Full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    max-width: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
+
+}
+
+.why-choose-us {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;    /* Center align items */
+    padding: 0;
+    padding-bottom: 3rem;             /* Remove padding */
+    width: 100%;
+}
 
 
 }
@@ -1938,7 +2259,7 @@ h4 {
         font-size: 1.25rem;
     }
 
-    .service-content ul li {
+    .service-content ul li, .contact-info h3, .contact-info ul li {
         font-size: 0.875rem;
     }
 
@@ -2016,7 +2337,7 @@ h4 {
         font-size: 1.4rem;
     }
 
-    .help-section h3 {
+    .help-section h3, .contact-info ul li  {
         font-size: 0.8rem;
     }
 
@@ -2029,7 +2350,7 @@ h4 {
         padding-bottom: 2rem;
     }
 
-    .commitment p{
+    .commitment p, .contact-us p{
         font-size: 0.9rem;
         line-height: 1.4;
     }
@@ -2050,6 +2371,9 @@ h4 {
         align-items: center;
         gap: 0.8rem;
     }
+
+    .contact-info h2 {
+        font-size: 1rem;
 
     
 }
@@ -2116,7 +2440,7 @@ h4 {
         right: 20px;
     }
 
-    .help-section h3 {
+    .help-section h3, .contact-info ul li  {
         font-size: 0.8rem;
         line-height: 1.6rem;
 
