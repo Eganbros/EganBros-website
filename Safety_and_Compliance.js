@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('getstartedButton2'),
         document.getElementById('getstartedButton3'),
         document.getElementById('getstartedButton4'),
-        document.getElementById('getstartedButton5')
+        document.getElementById('getstartedButton5'),
+        document.getElementById('getstartedButton5'),
     ];
 
     // Ensure all buttons have the same width before any hover effect
