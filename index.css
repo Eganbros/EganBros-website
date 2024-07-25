@@ -909,7 +909,7 @@ p {
 footer {
     background-color: #1c1c2b;
     color: #ffffff;
-    padding: 40px 20px;
+    padding: 40px 0px;
     text-align: left;
 }
 
@@ -1545,6 +1545,12 @@ li:hover {
     .feedback h4 {
         font-size: 1.8rem;
     }
+
+    .footer-container {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+    
 
 }
 
