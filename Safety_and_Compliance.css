@@ -1106,11 +1106,20 @@ line-height: 1.25rem; /* 133.333% */
 
 .contact-us  {
     display: flex;
-    padding: 6.25rem 8%;
+    padding: 6.25rem 0;
+    background-color: #E4E7EC ;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us-text{
+    display: flex;
+    width: 1123px;
     flex-direction: row;
     align-items: center;
     gap: 3rem;
-    justify-content: flex-start
+    justify-content: flex-start;
 }
 
 
@@ -1149,7 +1158,7 @@ line-height: 1.25rem; /* 133.333% */
     cursor: pointer;
     border-radius: 5rem;
     border: 3px solid var(--Navy, #211E3E);
-    background-color: #FFF;
+    background-color: #E4E7EC;
     height: 5rem;
     width: auto; /* Set initial width */
 
@@ -1163,9 +1172,6 @@ line-height: 1.25rem; /* 133.333% */
     display: none; /* Initially hide the arrow */
 }
 
-#letsTalk.hovered h2 {
-    color: #AB1D22;
-}
 
 #letsTalk.hovered .arrow-icon {
     display: inline-block; /* Show arrow on hover */
@@ -1173,11 +1179,10 @@ line-height: 1.25rem; /* 133.333% */
 
 #letsTalk:hover {
     border-color: #AB1D22; /* Change border color to red on hover */
-    background-color: #AB1D22; /* Keep background color white */
 }
 
 #letsTalk:hover h2 {
-    color: #FFFF;
+    color:  #AB1D22;
 }
 
 
@@ -1413,6 +1418,16 @@ li:hover {
         background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/0dd70db1d9ace095c156ce48c96fb6e3ab0ce1bb/Content/Safety%20Main%20banner/Safety_main%20banner-right-image%205.svg');
     }
 
+    .contact-us-text{
+        display: flex;
+        width: 100%;
+        padding: 0 8%;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+        justify-content: flex-start;
+    }
+
    
 }
 
@@ -1475,6 +1490,25 @@ li:hover {
     .contact-info {
         max-width: 60%;
     }
+}
+
+@media screen and (max-width: 1226px) {
+    .contact-us p {
+        color: var(--Text-Text-Tertiary, #7D7D7D);
+        font-family: Inter;
+        font-size: 1.6rem;
+    }
+
+    #letsTalk {
+        height: 3.7rem;
+    }
+
+    .contact-us h2 {
+        font-size: 1.3rem;
+        width: 10rem;
+
+    }
+
 }
 
 @media screen and (max-width: 1160px) {
@@ -1620,6 +1654,13 @@ li:hover {
         background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/0dd70db1d9ace095c156ce48c96fb6e3ab0ce1bb/Content/Safety%20Main%20banner/Safety_main%20banner-right-image%206.svg');
     }
 }
+
+@media screen and (max-width: 1038px) {
+    #letsTalk {
+        height: 5rem
+    }
+}
+
 
 @media screen and (max-width: 1024px) {
     .service-item {
@@ -1900,6 +1941,39 @@ li:hover {
         width: 80%;
 }
 }
+
+@media screen and (max-width: 775px) {
+
+    .contact-us {
+        display: flex;
+        padding: 3rem 0;
+    }
+
+    .contact-us-text {
+        display: flex;
+        width: 100%;
+        padding: 0 8%;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.6rem;
+        justify-content: center;
+    }
+
+    .contact-us p {
+        text-align: center;
+    }
+
+    #letsTalk {
+        height: 4rem;
+    }
+
+    .contact-us h2 {
+        font-size: 1.1rem;
+        width: 8rem;
+
+    }
+}
+
 
 @media screen and (max-width: 750px) {
 
@@ -2230,8 +2304,23 @@ h4 {
     width: 100%;
 }
 
+#letsTalk {
+    height: 3rem;
+    border: 2.6px solid var(--Navy, #211E3E);
+}
+
+.contact-us h2 {
+    font-size: 0.9rem;
+    width: 7rem;
+
+
 
 }
+
+
+
+
+
 
 @media screen and (max-width: 480px) {
     
