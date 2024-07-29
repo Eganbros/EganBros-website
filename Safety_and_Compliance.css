@@ -1885,7 +1885,7 @@ li:hover {
         flex-direction: column;
         align-items: left;
         height: auto;
-        gap: 3rem;
+        gap: 2.3rem;
         padding-top: 2rem;
         padding-bottom: 2rem;
 
@@ -1934,6 +1934,7 @@ li:hover {
     .management {
         height: auto !important;
     }
+
 
 }
 
@@ -2389,6 +2390,11 @@ h4 {
 
     .footer-container{
         padding-top: 1rem;
+    }
+
+    .services {
+        gap: 2rem;
+
     }
 
     
