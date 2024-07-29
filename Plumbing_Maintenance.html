@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        (function (m, a, z, e) {
+          var s, t;
+          try {
+            t = m.sessionStorage.getItem('maze-us');
+          } catch (err) {}
+        
+          if (!t) {
+            t = new Date().getTime();
+            try {
+              m.sessionStorage.setItem('maze-us', t);
+            } catch (err) {}
+          }
+        
+          s = a.createElement('script');
+          s.src = z + '?t=' + t + '&apiKey=' + e;
+          s.async = true;
+          a.getElementsByTagName('head')[0].appendChild(s);
+          m.mazeUniversalSnippetApiKey = e;
+        })(window, document, 'https://snippet.maze.co/maze-universal-loader.js', 'e0a92543-d818-43cc-a158-5aecd97d6336');
+        </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JL753SVNLF"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-JL753SVNLF');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egan Bros.</title>
+
+    <link rel="stylesheet" href="./Plumbing_Maintenance.css">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="icon" href="https://raw.githubusercontent.com/Eganbros/EganBros-website/c6a48ae561e9f646fda3cede8d693e34ae241e14/Content/Logo.svg" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <nav class="top-nav">
+        <div class="left-nav">
+            <a href="./index.html"><img class="logo-img" src="https://raw.githubusercontent.com/Eganbros/EganBros-website/c6a48ae561e9f646fda3cede8d693e34ae241e14/Content/Logo.svg" alt="logo"></a>
+        </div>
+
+        <div class="middle-nav">
+            <div class="nav-section dropdown">
+                <div class="nav-alignment">
+                <h3 class="dropbtn">Services</h3>
+                <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/c6a48ae561e9f646fda3cede8d693e34ae241e14/Content/chevron-down.svg" alt="chevron" class="chevron-icon" id="chevron-icon-services">
+                </div>  
+                <div class="dropdown-content">
+                    <a href="./Safety_and_Compliance.html">Safety & Compliance</a>
+                    <a href="./Plumbing_Maintenance.html">Plumbing Maintenance</a>
+                    <a href="./Water_Meter_Installations.html">Water Meter Installations</a>
+                    <a href="./Confined_Space_Access_Works.html">Confined Space Access Works</a>
+                    <a href="./Electrical_Maintenance.html">Electrical Maintenance</a>
+                    <a href="./Car_Charging_Installation.html">Car Charging Installation</a>
+                </div>
+            </div>
+
+            <div class="nav-section dropdown">
+                <div class="nav-alignment">
+                <h3 class="dropbtn">Case Studies</h3>
+                <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/c6a48ae561e9f646fda3cede8d693e34ae241e14/Content/chevron-down.svg" alt="chevron" class="chevron-icon" id="chevron-icon-case-studies">
+                </div>
+                <div class="dropdown-content">
+                    <a href="#">Case Study 1</a>
+                    <a href="#">Case Study 2</a>
+                    <a href="#">Case Study 3</a>
+                </div>
+            </div>
+
+            <div class="nav-section dropdown">
+                <div class="nav-alignment">
+                <h3 class="dropbtn">About</h3>
+                <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/c6a48ae561e9f646fda3cede8d693e34ae241e14/Content/chevron-down.svg" alt="chevron" class="chevron-icon" id="chevron-icon-about">
+                </div>
+                <div class="dropdown-content">
+                    <a href="#">About Us</a>
+                    <a href="#">Meet The Team</a>
+                    <a href="#">Certifications</a>
+                    <a href="#">Our Offices</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="right-nav">
+            <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/c6a48ae561e9f646fda3cede8d693e34ae241e14/Content/Line.svg" alt="stroke" class="stroke1">
+
+            <a href="#" class="button" id="contactButton">
+                <span class="text">Contact Us</span>
+                <img class="arrow-icon" src="https://raw.githubusercontent.com/Eganbros/EganBros-website/d2a3b6c2af1869836f78226b48d8f30b279c1d54/Content/red-arrow-CTA.svg" alt="Arrow">
+            </a>
+            <div id="hamburgerMenu" class="hamburger-icon">
+                <img src="https://raw.githubusercontent.com/em-egan/GA-Final_Project/72ac1a0315ba5040f7ec9acf95c122f3a8da8e05/3%20UI%20Elements/Hamburger2.svg" alt="Menu">
+            </div>
+        </div>
+    </nav> 
+
+    <!-- Right Side Menu -->
+    <div id="rightSideMenu" class="side-menu">
+        <div class="menu-header">
+            <span id="closeMenu" class="close-icon">&times;</span>
+        </div>
+        <nav class="menu-links" id="menuLinks">
+            <!-- Links will be dynamically added here -->
+        </nav>
+    </div>
+
+    <main>
+        <div class="main-header-text">
+            <div class="header-text-top">
+                <h4>Plumbing Maintenance</h4>
+                <h3>Our comprehensive plumbing maintenance services are designed to prevent issues before they arise, saving you time, money, and inconvenience.</h3>
+            </div>
+        </div>
+    
+        <div class="header-image"></div>
+    </main>
+
+    <section class="help-section-wrapper">
+        <div class="help-section">
+            <h2>How can we help?</h2>
+            <h3>At Egan Brothers, we understand that regular maintenance is essential to ensure the longevity and efficiency of your plumbing systems. Our comprehensive plumbing maintenance services are designed to prevent issues before they arise, saving you time, money, and inconvenience.</h3>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="service-item">
+            <div class="service-title">
+                <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/51fcafbd8821061ffc4e15254a85c3bd42caed85/Content/black%20single%20arrow.svg" alt="arrow-symbol">
+                <h4>Routine Inspection</h4>
+            </div>
+            <div class="service-content">
+                <ul>
+                    <li>Thorough inspection of all plumbing systems and fixtures</li>
+                    <li>Identification of potential issues and early warning signs</li>
+                    <li>Detailed reporting on the condition of your plumbing infrastructure</li>
+                </ul>
+            </div>
+        </div>
+        <div class="residential-wrapper">
+            <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/a536b8cec404d1d1f9007fd4955436430310f7f1/Content/Safety%20Main%20banner/residential.svg" alt="Victorian Residential Tenancy Act Safety Checks" class="residential">
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="service-item">
+            <div class="service-title">
+                <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/51fcafbd8821061ffc4e15254a85c3bd42caed85/Content/black%20single%20arrow.svg" alt="arrow-symbol">
+                <h4>Leak Detection and Repair</h4>
+            </div>
+            <div class="service-content">
+                <ul>
+                    <li>Advanced techniques for detecting hidden leaks in pipes, walls, and floors</li>
+                    <li>Prompt and efficient repair of identified leaks to prevent water damage</li>
+                    <li>Ongoing monitoring to ensure the integrity of your plumbing system</li>
+                </ul>
+            </div>
+        </div>
+        <div class="residential-wrapper">
+            <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/a536b8cec404d1d1f9007fd4955436430310f7f1/Content/Safety%20Main%20banner/residential.svg" alt="Victorian Residential Tenancy Act Safety Checks" class="residential">
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="service-item">
+            <div class="service-title">
+                <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/51fcafbd8821061ffc4e15254a85c3bd42caed85/Content/black%20single%20arrow.svg" alt="arrow-symbol">
+                <h4>Drain Cleaning and Unclogging</h4>
+            </div>
+            <div class="service-content">
+                <ul>
+                    <li>Regular cleaning of drains to prevent blockages and backups</li>
+                    <li>Use of high-pressure water jetting and other methods to clear stubborn clogs</li>
+                    <li>Inspection of drainage systems to ensure proper flow and function</li>
+                </ul>
+            </div>
+        </div>
+        <div class="residential-wrapper">
+            <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/a536b8cec404d1d1f9007fd4955436430310f7f1/Content/Safety%20Main%20banner/residential.svg" alt="Victorian Residential Tenancy Act Safety Checks" class="residential">
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="service-item">
+            <div class="service-title">
+                <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/51fcafbd8821061ffc4e15254a85c3bd42caed85/Content/black%20single%20arrow.svg" alt="arrow-symbol">
+                <h4>Water Heater Maintenance</h4>
+            </div>
+            <div class="service-content">
+                <ul>
+                    <li>Inspection and servicing of hot water systems to ensure optimal performance</li>
+                    <li>Flushing of water heaters to remove sediment build-up</li>
+                    <li>Testing and replacement of faulty components to maintain efficiency</li>
+                </ul>
+            </div>
+        </div>
+        <div class="residential-wrapper">
+            <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/a536b8cec404d1d1f9007fd4955436430310f7f1/Content/Safety%20Main%20banner/residential.svg" alt="Victorian Residential Tenancy Act Safety Checks" class="residential">
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="service-item">
+            <div class="service-title">
+                <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/51fcafbd8821061ffc4e15254a85c3bd42caed85/Content/black%20single%20arrow.svg" alt="arrow-symbol">
+                <h4>Fixture and Fitting Maintenance</h4>
+            </div>
+            <div class="service-content">
+                <ul>
+                    <li>Regular maintenance of taps, faucets, and other fixtures to prevent leaks</li>
+                    <li>Replacement of worn or damaged washers, seals, and O-rings</li>
+                    <li>Adjustment and alignment of fixtures for smooth operation</li>
+                </ul>
+            </div>
+        </div>
+        <div class="residential-wrapper">
+            <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/a536b8cec404d1d1f9007fd4955436430310f7f1/Content/Safety%20Main%20banner/residential.svg" alt="Victorian Residential Tenancy Act Safety Checks" class="residential">
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="service-item">
+            <div class="service-title">
+                <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/51fcafbd8821061ffc4e15254a85c3bd42caed85/Content/black%20single%20arrow.svg" alt="arrow-symbol">
+                <h4>Pipe Maintenance and Repair</h4>
+            </div>
+            <div class="service-content">
+                <ul>
+                    <li>Inspection and maintenance of water and sewer pipes</li>
+                    <li>Repair and replacement of corroded or damaged pipes</li>
+                    <li>Insulation of pipes to prevent freezing and burst pipes in colder weather</li>
+                </ul>
+            </div>
+        </div>
+        <div class="residential-wrapper">
+            <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/a536b8cec404d1d1f9007fd4955436430310f7f1/Content/Safety%20Main%20banner/residential.svg" alt="Victorian Residential Tenancy Act Safety Checks" class="residential">
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="service-item">
+            <div class="service-title">
+                <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/51fcafbd8821061ffc4e15254a85c3bd42caed85/Content/black%20single%20arrow.svg" alt="arrow-symbol">
+                <h4>Emergency Plumbing Services</h4>
+            </div>
+            <div class="service-content">
+                <ul>
+                    <li>24/7 emergency response for urgent plumbing issues</li>
+                    <li>Rapid diagnosis and resolution of emergency situations</li>
+                    <li>Minimisation of damage and disruption to your property</li>
+                </ul>
+            </div>
+        </div>
+        <div class="residential-wrapper">
+            <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/a536b8cec404d1d1f9007fd4955436430310f7f1/Content/Safety%20Main%20banner/residential.svg" alt="Victorian Residential Tenancy Act Safety Checks" class="residential">
+        </div>
+    </section>
+
+
+
+    <section class="commitment">
+        <p>Regular plumbing maintenance is crucial to ensure the smooth operation of your systems and prevent costly repairs in the future.</p>
+        <div class="stroke-little"></div>
+    </section>
+    
+
+    <!-- Why Choose Us? Section -->
+    <section class="why-choose-us">
+        <div class="contact-image"></div>
+        <div class="contact-info">
+            <h2>Why Choose Us?</h2>
+            <h3>We keep your plumbing in top condition with our comprehensive maintenance services.</h3>
+            <ul>
+                <li>Experienced and qualified technicians</li>
+                <li>Use of advanced technology and equipment</li>
+                <li>Compliance with all local and national safety standards</li>
+                <li>Transparent and detailed reporting</li>
+                <li>Ensuring maintenance of your plumbing systems is our top priority.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact-us">
+        <div class="contact-us-text">
+            <p>Contact us today to schedule your Safety & Compliance Check and experience the Egan Brothers difference.</p>
+            <a href="#" class="button letsTalkone" id="letsTalk">
+                <h2>Let's Talk -></h2>
+                <img class="arrow-icon" src="https://raw.githubusercontent.com/Eganbros/EganBros-website/d2a3b6c2af1869836f78226b48d8f30b279c1d54/Content/red-arrow-CTA.svg" alt="Arrow">
+            </a>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li class="animate-link"><a href="#">About</a></li>
+                    <li class="animate-link"><a href="#">Meet the Team</a></li>
+                    <li class="animate-link"><a href="#">Contact</a></li>
+                    <li class="animate-link"><a href="#">Certifications</a></li>
+                    <li class="animate-link"><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Services</h3>
+                <ul>
+                    <li class="animate-link"><a href="./Safety_and_Compliance.html">Safety & Compliance</a></li>
+                    <li class="animate-link"><a href="./Plumbing_Maintenance.html">Plumbing Maintenance</a></li>
+                    <li class="animate-link"><a href="./Water_Meter_Installations.html">Water Meter Installations</a></li>
+                    <li class="animate-link"><a href="./Confined_Space_Access_Works.html">Confined Space Access Works</a></li>
+                    <li class="animate-link"><a href="./Electrical_Maintenance.html">Electrical Maintenance</a></li>
+                    <li class="animate-link"><a href="./Car_Charging_Installation.html">Car Charging Installation</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Case Studies</h3>
+                <ul>
+                    <li class="animate-link"><a href="#">Case name</a></li>
+                    <li class="animate-link"><a href="#">Case name</a></li>
+                    <li class="animate-link"><a href="#">Case name</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Careers</h3>
+                <ul>
+                    <li class="animate-link"><a href="#">Join Our Team</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Copyright 2024 Egan Bros. <br class="copyright">All rights reserved.</p>
+            <a href="./index.html"><img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/658b88d21e699d5d39882b004ade4840e3b7d005/Content/white%20logo.svg" alt="Egan Bros. Logo" class="footer-logo"></a>
+        </div>
+    </footer>
+
+
+    <script src="./Plumbing_Maintenance.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</body>
