@@ -923,6 +923,7 @@ footer {
     padding-top: 3rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid var(--Borders-Secondary-Icons, #7D7D7D);
+    gap: 2rem;
 }
 
 .footer-column {
@@ -959,6 +960,8 @@ footer {
     padding-bottom: 15px;
     height: auto;
 }
+
+
 
 .footer-column ul li a {
     position: relative; /* Add this to position the stroke */
@@ -1547,8 +1550,8 @@ li:hover {
     }
 
     .footer-container {
-        margin-left: 24px;
-        margin-right: 24px;
+        margin-left: 8% ;
+        margin-right: 8%;
     }
     
 
