@@ -2432,8 +2432,7 @@ h4 {
     .text, .text-getstarted {
         font-size: 0.8rem;
         font-weight: 500;
-
-}
+    }
 
     .main-header-text{
         gap: 1rem;
@@ -2463,7 +2462,12 @@ h4 {
 
     .services{
         padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
+        gap: 1.5rem;
+    }
+
+    .service-item{
+        gap: 1rem;
     }
 
     .commitment p, .contact-us p{
@@ -2483,15 +2487,16 @@ h4 {
     
     .service-title {
         display: flex;
-        padding-left: 1rem;
+        padding-left: 0.5rem;
         align-items: center;
         gap: 0.8rem;
     }
 
     .contact-info h2 {
         font-size: 1rem;
-
     }
+
+
 
 }
 
@@ -2499,12 +2504,11 @@ h4 {
 
     .pricing-cards {
         width: 30rem;
-        
+        transform: scale(0.65);     
     }
+
+
     
-    .pricing-cards {
-        transform: scale(0.65); 
-    }
 
     .plan-pricing {
         gap: 2rem;
