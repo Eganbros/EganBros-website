@@ -1544,6 +1544,16 @@ li:hover {
         border: 2px solid
     }
 
+    .footer-column ul li {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        height: auto;
+
+
+    }.footer-container{
+        gap: 1rem;
+    }
+
 }
 
 
@@ -2334,9 +2344,29 @@ h4 {
     gap: 0rem;
 }
 
-
-
 }
+
+@media screen and (max-width: 560px) {
+    footer {
+        padding: 1.2rem 0;
+    }
+}
+
+
+
+@media screen and (max-width: 542px) {
+
+    /* 
+    .footer-column ul li {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: auto;
+    } */
+    
+    .footer-container{
+        gap: 0rem;
+    }
+    }
 
 
 @media screen and (max-width: 488px) {
