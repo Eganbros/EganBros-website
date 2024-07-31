@@ -2516,7 +2516,7 @@ h4 {
 
     .pricing-cards {
         /* width: 30rem; */
-        transform: scale(0.5);     
+        transform: scale(0.57);     
     }
 
 
@@ -2543,6 +2543,49 @@ h4 {
     }
 
 }
+
+@media screen and (max-width: 374px) {
+
+    .pricing-cards {
+        /* width: 30rem; */
+        transform: scale(0.56);     
+    }
+
+
+    .plan-pricing {
+        gap: 2rem;
+        height: 56rem;
+    }
+
+    .pricing-card-item{
+        height: 26rem;
+    }
+
+    .premium {
+        height: 26rem;
+    }
+
+    .immersive {
+        height: 28rem;
+    }
+
+    .title-pricing p {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+
+}
+
+@media screen and (max-width: 374px) {
+
+    .pricing-cards {
+        /* width: 30rem; */
+        transform: scale(0.54);     
+    }
+
+}
+
+
 
 @media screen and (max-width: 360px) {
 
@@ -2581,6 +2624,12 @@ h4 {
 
     }
 
+    .pricing-cards {
+        /* width: 30rem; */
+        transform: scale(0.50);     
+    }
+
+
 
 }
 
@@ -2589,7 +2638,7 @@ h4 {
 
     .pricing-cards {
         /* width: 30rem; */
-        transform: scale(0.4);     
+        transform: scale(0.47);     
     }
 
 
@@ -2613,6 +2662,15 @@ h4 {
     .title-pricing p {
         font-size: 0.8rem;
         line-height: 1.2rem;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .pricing-cards {
+        /* width: 30rem; */
+        transform: scale(0.4);     
     }
 
 }
