@@ -648,7 +648,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: var(--Spacing-Spacing-3Xl, 2.5rem);
+    gap: var(--Spacing-Spacing-3Xl, 2rem);
 }
 
 
@@ -688,7 +688,7 @@ p {
 }
 
 
-.service-content ul li{
+.service-content ul li {
     margin-bottom: 0.5rem;
     color: var(--Text-Text-Secondary, #474747);
     padding-left: 10px;
@@ -696,7 +696,8 @@ p {
 
         /* Title/headline - regular */
     font-family: Inter;
-    font-size: 1.2rem;
+    line-height: 1.5;
+    font-size: 1.1rem;
     font-style: normal;
     font-weight: 300;
     line-height: auto; /* 180% */
