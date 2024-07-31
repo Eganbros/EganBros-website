@@ -920,7 +920,7 @@ footer {
     margin-left: 8%;
     margin-right: 8%;
     height: auto;
-    padding-top: 3rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid var(--Borders-Secondary-Icons, #7D7D7D);
     gap: 2rem;
@@ -1210,6 +1210,16 @@ li:hover {
     .main-header-text .button {
         border: 2px solid
 
+    }
+
+.footer-column ul li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: auto;
+}
+
+.footer-container{
+    gap: 1rem;
 }
 
 }
@@ -1755,6 +1765,25 @@ h4 {
     gap: 0.6rem;
 }
 
+footer {
+    padding: 1.2rem 0;
+}
+
+}
+
+
+@media screen and (max-width: 542px) {
+
+/* 
+.footer-column ul li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: auto;
+} */
+
+.footer-container{
+    gap: 0rem;
+}
 }
 
 @media screen and (max-width: 480px) {
