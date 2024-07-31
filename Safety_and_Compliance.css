@@ -2405,7 +2405,7 @@ h4 {
     }
 
     .pricing-card-item {
-        border: 1px solid var(--Borders-Primary-Shade-02, #C6C4C4);
+        border: 1.5px solid var(--Borders-Primary-Shade-02, #d7d7d7);
     }
     
 
