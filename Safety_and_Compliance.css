@@ -1532,6 +1532,17 @@ li:hover {
         border: 2px solid
     }
 
+    .footer-container{
+        gap: 1rem;
+    }
+
+    .footer-column ul li {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: auto;
+    }
+    
+
 }
 
 
@@ -2340,10 +2351,22 @@ h4 {
     line-height: 1.2rem;
 }
 
-
-
-
 }
+
+@media screen and (max-width: 560px) {
+    footer {
+        padding: 1.2rem 0;
+    }
+}
+
+@media screen and (max-width: 542px) {
+
+    
+    .footer-container{
+        gap: 0rem;
+    }
+}
+
 
 
 @media screen and (max-width: 488px) {
@@ -2407,8 +2430,6 @@ h4 {
     .pricing-card-item {
         border: 2px solid var(--Borders-Primary-Shade-02, #d7d7d7);
     }
-    
-
     
 }
 
