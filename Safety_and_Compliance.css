@@ -2335,6 +2335,12 @@ h4 {
     gap: 0rem;
 }
 
+.title-pricing p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+}
+
+
 
 
 }
@@ -2497,6 +2503,11 @@ h4 {
         font-size: 1rem;
     }
 
+    .title-pricing p {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+    }
+
 
 
 }
@@ -2504,20 +2515,18 @@ h4 {
 @media screen and (max-width: 394px) {
 
     .pricing-cards {
-        width: 30rem;
-        transform: scale(0.65);     
+        /* width: 30rem; */
+        transform: scale(0.5);     
     }
 
-
-    
 
     .plan-pricing {
         gap: 2rem;
-        height: 108rem;
+        height: 56rem;
     }
 
     .pricing-card-item{
-        height: 24rem;
+        height: 26rem;
     }
 
     .premium {
@@ -2528,6 +2537,10 @@ h4 {
         height: 28rem;
     }
 
+    .title-pricing p {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
 
 }
 
@@ -2571,9 +2584,42 @@ h4 {
 
 }
 
+
+@media screen and (max-width: 330px) {
+
+    .pricing-cards {
+        /* width: 30rem; */
+        transform: scale(0.4);     
+    }
+
+
+    .plan-pricing {
+        gap: 2rem;
+        height: 46rem;
+    }
+
+    .pricing-card-item{
+        height: 26rem;
+    }
+
+    .premium {
+        height: 26rem;
+    }
+
+    .immersive {
+        height: 28rem;
+    }
+
+    .title-pricing p {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+
+}
+
 @media screen and (max-width: 305px) {
 
 .plan-pricing {
-    height: 110rem;
+    height: 46.5rem;
 }
 }
