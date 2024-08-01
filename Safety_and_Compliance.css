@@ -1213,7 +1213,7 @@ footer {
     margin-left: 8%;
     margin-right: 8%;
     height: auto;
-    padding-top: 3rem;
+    padding-top: 1rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid var(--Borders-Secondary-Icons, #7D7D7D);
     gap: 2rem;
@@ -1950,6 +1950,15 @@ li:hover {
 
 }
 
+@media screen and (max-width: 824px) {
+
+    .footer-column {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+}
+
 
 @media screen and (max-width: 800px) {
     .main-header-text h3 {
@@ -2240,7 +2249,7 @@ h4 {
 
 
 .footer-logo {
-    width: 20%;
+    width: 75%;
 }
 
 .header-image {
@@ -2356,6 +2365,11 @@ h4 {
 @media screen and (max-width: 560px) {
     footer {
         padding: 1.2rem 0;
+    }
+
+    .left-nav{
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
