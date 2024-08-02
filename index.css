@@ -1777,11 +1777,25 @@ footer {
     padding: 1.2rem 0;
 }
 
-.left-nav{
+.left-na {
     padding-left: 0;
     padding-right: 0;
 }
 
+.container {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.footer-container {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.left-nav {
+    padding-left: 0;
+    padding-right: 0;
+}
 }
 
 
