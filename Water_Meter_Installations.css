@@ -1,0 +1,2685 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.right-nav .hamburger-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.top-nav {
+    display: flex;
+    width: auto;
+    padding: 1.625rem 8%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-nav {
+    display: flex;
+    width: 12.3125rem;
+    padding: 0.625rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625rem;
+}
+
+.middle-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--Spacing-Spacing-3Xl, 2.5rem);
+}
+
+.nav-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.125rem;
+}
+
+.nav-alignment {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.3rem;
+    animation-timing-function: ease-out;
+    animation-duration: 300ms;
+}
+
+h3 {
+    color: var(--Navy, #211E3E);
+    font-family: Inter;
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.75rem;
+    text-decoration: none;
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--Spacing-Spacing-3Xl, 2.5rem);
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #1e1e4d;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    height: 3.25rem;
+    padding: var(--Spacing-Spacing-none, 0rem) var(--Spacing-Spacing-2Xl, 2rem);
+    justify-content: center;
+    align-items: center;
+    gap: var(--Spacing-Spacing-Xs, 0.25rem);
+    border-radius: 1.875rem;
+    background: var(--Navy, #211E3E);
+    cursor: pointer;
+    
+
+}
+
+.pricing-card-item .button {
+
+    min-width: 13rem; /* Adjust this value based on your design */
+    box-sizing: border-box; /* Ensures padding is included in width calculation */
+}
+
+
+
+
+.text {
+    color: var(--Text-Text-CTA, #FFF);
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.375rem; /* 129.412% */
+}
+
+.button.arrow {
+    background-color: #fff;
+    border: 3px solid var(--Red, #AB1D22);
+
+}
+
+.button .arrow-icon {
+    display: none;
+    vertical-align: middle;
+}
+
+
+.button.hovered {
+    width: 100%; /* Maintains full width on hover */
+}
+
+.button.hovered .text, .button.hovered .text-getstarted {
+    display: none;
+}
+
+.button.hovered .arrow-icon {
+    display: inline-block;
+}
+
+.button.hovered .arrow-icon {
+    display: inline-block;
+}
+
+
+
+
+a {
+    display: inline-block;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-decoration: none;
+    width: auto;
+}
+
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: max-content;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: var(--Spacing-Spacing-3Xl, 1rem) var(--Spacing-Spacing-Lg, 1rem) var(--Spacing-Spacing-2Xl, 0.8rem);
+    border-radius: 0.875rem;
+    box-shadow: -1px 8px 8px 0px rgba(0, 0, 0, 0.08);
+    left: 0; /* Initial position */
+    transition: left 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Show the Dropdown Menu on Hover or Click */
+.dropdown:hover .dropdown-content,
+.dropdown-content.show {
+    display: block;
+    left: -30px; /* Adjust this value as needed */
+}
+
+/* Links Inside the Dropdown */
+.dropdown-content a {
+    display: flex;
+    height: 3rem;
+    padding: var(--Spacing-Spacing-Sm, 0.5rem) 0rem;
+    justify-content: left;
+    align-items: center;
+    color: var(--Text-Text-Secondary, #555454);
+    font-family: Inter;
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 1.375rem; /* 129.412% */
+    padding-left: 20px; /* Add space between stroke and text */
+    padding-right: 20px; /* Increase padding on the right */
+    position: relative; /* Add this to position the stroke */
+}
+
+.contact-button h3:hover {
+    color: var(--Red, #AB1D22);
+}
+
+/* Change Color of Links on Hover */
+.dropdown-content a:hover {
+    color: #AB1D22; 
+    font-weight: 500;
+    transform: translateX(10px);
+    transition: transform 0.3s ease;
+}
+
+/* Change Color of Links on Hover */
+.nav-section h3:hover {
+    color: var(--Red, #AB1D22);
+}
+
+.dropdown-content a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 27%; /* Adjust the top value to reduce height */
+    bottom: 27%; /* Adjust the bottom value to reduce height */
+    width: 5px; /* Width of the stroke */
+    background-color: #AB1D22; /* Color of the stroke */
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+}
+
+
+.dropdown-content a:hover::before {
+    transform: scaleY(1);
+}
+
+/* Additional Styles for the Dropdown Button */
+.dropbtn {
+    color: #211E3E;
+    padding: 0px 0px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+/* Chevron Icon */
+.chevron-icon {
+    transition: content 0.3s;
+}
+
+/* Change Color of Links and Chevron Icon when Dropdown is Visible */
+.nav-section h3:hover,
+.dropdown-content.show .dropbtn {
+    color: #AB1D22; /* Red color */
+}
+
+.nav-section.dropdown:hover #chevron-icon-services,
+#chevron-icon-services.show {
+    content: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/72f2a3399ed79c5d4a89369affba244a280ca4a4/Content/chevron-down-red.svg');
+}
+
+.chevron-icon.show {
+    content: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/72f2a3399ed79c5d4a89369affba244a280ca4a4/Content/chevron-down-red.svg'); /* Change chevron icon */
+}
+
+.right-nav {
+    width: 13rem;
+}
+
+.container a {
+    flex: 1; /* Example: Ensure <a> tags fill the container in a flex layout */
+}
+
+#chevron-icon-services {
+    content: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/c6a48ae561e9f646fda3cede8d693e34ae241e14/Content/chevron-down.svg');
+}
+
+#chevron-icon-services.show {
+    content: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/72f2a3399ed79c5d4a89369affba244a280ca4a4/Content/chevron-down-red.svg');
+}
+
+#chevron-icon-case-studies {
+    content: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/c6a48ae561e9f646fda3cede8d693e34ae241e14/Content/chevron-down.svg');
+}
+
+#chevron-icon-case-studies.show {
+    content: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/72f2a3399ed79c5d4a89369affba244a280ca4a4/Content/chevron-down-red.svg');
+}
+
+#chevron-icon-about {
+    content: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/c6a48ae561e9f646fda3cede8d693e34ae241e14/Content/chevron-down.svg');
+}
+
+#chevron-icon-about.show {
+    content: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/72f2a3399ed79c5d4a89369affba244a280ca4a4/Content/chevron-down-red.svg');
+}
+
+.button.hovered .text {
+    display: none;
+}
+
+.button.hovered .arrow-icon {
+    display: inline-block;
+}
+
+.chevron-icon.show {
+    content: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/72f2a3399ed79c5d4a89369affba244a280ca4a4/Content/chevron-down-red.svg'); /* Change chevron icon */
+}
+
+/* Change title color to red when dropdown is visible */
+.nav-section.dropdown:hover .dropbtn,
+.dropdown-content.show .dropbtn,
+.nav-section .dropbtn.active {
+    color: #AB1D22; /* Red color */
+}
+
+
+Hamburger Icon Styling
+.hamburger-icon {
+    width: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.hamburger-icon img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+
+/* Side Menu Styling */
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #1c1c2b;
+    overflow-x: hidden;
+    transition: 0.5s;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    padding-top: 20px;
+    opacity: 0.96;
+
+}
+
+.side-menu.open {
+    width: 380px; /* Adjust this value to increase the size of the side menu */
+}
+
+.side-menu .menu-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 8%;
+}
+
+
+
+/* Close Icon Styling to Match Hamburger Icon Position */
+.close-icon {
+    font-size: 46px;
+    font-weight: 200;
+
+    cursor: pointer;
+    color: #ffffff;
+    position: fixed;
+    top: 35px;
+    right: 20px;
+    padding-right: 6%;
+    z-index: 1001; /* Ensure it's above the side menu */
+    display: none;
+}
+
+
+.side-menu .menu-links {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 40px;
+    gap: 1rem;
+    margin-top: 60px; /* Adjust to avoid overlap with close icon */
+}
+
+.side-menu .menu-links h3 {
+    padding: 0px 0px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.0625rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 22px;
+    color: #FFFF;
+    margin-bottom: 10px; 
+}
+
+.side-menu .menu-links a {
+    padding: 8px 0;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Inter', sans-serif;
+    font-weight: 350;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative; /* Add this to position the stroke */
+    padding-left: 20px; /* Add this to create space between the stroke and the text */
+}
+
+
+.side-menu .menu-links a:hover {
+    font-weight: 500;
+    transform: translateX(10px);
+    transition: transform 0.3s ease;
+}
+
+.side-menu .menu-links a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px; /* Adjust the width of the stroke */
+    background-color: #AB1D22; /* Adjust the color of the stroke */
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+}
+
+.side-menu .menu-links a:hover::before {
+    transform: scaleY(1);
+}
+
+
+main {
+    display: flex;
+    width: auto;
+    align-items: flex-start;
+    background: var(--Navy, #211E3E);
+}
+
+.main-header-text {
+    display: flex;
+    height: 23.625rem;
+    min-width: 32rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding-left: 8%;
+    padding-right: 0%;
+}
+
+.header-text-top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-Lg, 1rem);
+    width: 31rem;
+}
+
+h1 {
+    color: var(--Text-Text-Inverted, #FFF);
+    font-family: Inter;
+    font-size: 2.8125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
+}
+
+.header-text-top h3 {
+    color: var(--Text-Text-CTA, #FFF);
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 1.75rem; /* 140% */
+}
+
+.main-header-text .contact-button {
+    border-radius: 1.875rem;
+    border: 3px solid var(--Text-White, #FFF);
+}
+
+.header-image {
+    width: 100%;
+    height: 23.625rem;
+    background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/1b4fad2ac78ea1b749b88853f05dc00b79835dd0/Content/2%20Plumbing%20Banner/main%20banner-right-image%201.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h2 {
+    color: var(--Navy, #211E3E);
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.75rem; /* 116.667% */
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+
+
+
+
+
+h4 {
+    color: var(--Navy, #F5F5F5);
+    text-align: center;
+    font-family: Inter;
+    font-size: 2.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 114%; /* 2.9925rem */
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+h5 {
+    color: var(--Text-Text-Tertiary, #7D7D7D);
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.9375rem; /* 155% */
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+
+p {
+    color: #666666;
+    font-family: Inter;
+    font-size: 0.9em;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    width: auto;
+    margin: 0;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+}
+
+
+
+/* Section: How can we help? */
+
+.help-section-wrapper {
+    background: #F5F7FB;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.help-section {
+    display: flex;
+    width: 100%;
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-2Xl, 2rem);
+}
+
+
+.help-section h2 {
+    color: var(--Red, #AB1D22);
+
+    /* Title/LargeTitle - Italic */
+    font-family: Inter;
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: 200;
+    line-height: 114%; /* 2.85rem */
+}
+
+
+.help-section h3 {
+    width: 100%;
+    color: var(--Navy, #211E3E);
+
+    /* Title/headline - semibold */
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.25rem; /* 180% */
+}
+
+/* Services */
+
+.services {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch; /* Ensure items stretch to match the tallest item */
+    padding: 4rem 8%;
+    gap: 5%; /* Adjust gap between items */
+    height: 17rem;
+    position: relative; /* Ensure the stroke is positioned relative to .services */
+}
+
+
+.commercial {
+    height: 28.5rem !important;
+}
+
+
+.management {
+    height: 23rem !important;
+}
+
+.service-content{
+    width: 40rem;
+}
+
+
+/* Add the stroke with matching width and padding */
+.services::before {
+    content: '';
+    position: absolute;
+    left: 8%; /* Match the padding-left of .services */
+    right: 8%; /* Match the padding-right of .services */
+    bottom: 0; /* Position it at the bottom */
+    height: 2px;
+    background-color: #EFEFEF; /* Match the color of the stroke */
+}
+
+.service-item {
+    flex: 0; /* Allow the service-item to grow and shrink */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-3Xl, 2rem);
+}
+
+
+
+
+.service-title{
+    width: 41rem;
+    display: flex;
+    padding-left: var(--Spacing-Spacing-Lg, 1rem);
+    align-items: center;
+    gap: 1.25rem;
+    /* margin-bottom: 1.5rem; */
+}
+
+.service-title img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.service-title {
+    display: flex;
+    padding-left: 1rem;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.service-title h4 {
+    color: var(--Navy, #211E3E);
+    text-align: left;
+
+    /* Title/LargeTitle 2 - Light */
+    font-family: Inter;
+    font-size: 2.3125rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+
+.service-content ul li {
+    margin-bottom: 0.5rem;
+    color: var(--Text-Text-Secondary, #474747);
+    padding-left: 10px;
+    position: relative;
+
+        /* Title/headline - regular */
+    font-family: Inter;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: auto; /* 180% */
+    
+}
+
+ul{
+    margin-block-start: 0em;
+}
+
+
+
+.service-content ul {
+    padding-left: 2rem;
+}
+
+
+.residential-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    max-height: 100%; /* Ensure it doesn't exceed the height of .service-item */
+}
+
+.residential-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+    max-height: 100%; /* Ensure the image does not expand in height */
+}
+
+
+
+/* Plan Pricing */
+
+.plan-pricing {
+    /* width: 100%; */
+    margin: 0 8%;
+    padding: 50px 0px;
+    display: flex;
+    padding-bottom: 5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.75rem;
+    align-self: stretch;
+    border-bottom: 1px solid #EFEFEF;
+
+}
+
+.get-started, .red {
+    display: flex;
+    height: 3.25rem;
+    padding: var(--Spacing-Spacing-none, 0rem) var(--Spacing-Spacing-2Xl, 2rem);
+    justify-content: center;
+    align-items: center;
+    gap: var(--Spacing-Spacing-Xs, 0.25rem);
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 1.25rem;
+    width: 100%; /* Ensures the buttons are full-width within their container */
+}
+
+.button.hovered, .get-started.hovered, .red.hovered, .letsTalk.hovered {
+    width: 100%; /* Maintain full width on hover */
+}
+
+.button.hovered .arrow-icon, .get-started.hovered .arrow-icon, .red.hovered .arrow-icon, .letsTalk.hovered .arrow-icon {
+    display: inline-block;
+}
+
+.button.hovered .text, .get-started.hovered .text-getstarted, .red.hovered .text, .letsTalk.hovered .text {
+    display: none;
+}
+
+.title-pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-Md, 0.75rem);
+}
+
+.title-pricing h2 {
+    color: var(--Text-Text-Primary, #0A0A0A);
+
+    /* Title/LargeTitle 2 - Light */
+    font-family: Inter;
+    font-size: 2.3125rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.title-pricing p {
+    color: var(--Text-Text-Tertiary, #7D7D7D);
+
+    /* Title/headline - light */
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.75rem; /* 140% */
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.pricing-card-item {
+    display: flex;
+    height: 30rem;
+    padding: 1.66513rem var(--Spacing-Spacing-3Xl, 1.66513rem);
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 0 0 0;
+    border-radius: 0.625rem;
+    border: 0.666px solid var(--Borders-Primary-Shade-02, #C6C4C4);
+    background: #FFF;
+    transition: transform 0.3s ease;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.08144rem;
+    align-self: stretch;
+    width: 100%;
+}
+
+/* .pricing-card-item:hover {
+    transform: scale(1.05);
+} */
+
+.top-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-Spacing-Lg, 0.66606rem);
+}
+
+.top-card h3 {
+    color: var(--Navy, #211E3E);
+    font-family: Inter;
+    font-size: 1.74838rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 114%; /* 1.99319rem */
+}
+
+.top-card p {
+    color: var(--Text-Text-Tertiary, #7D7D7D);
+    font-family: Inter;
+    font-size: 0.83256rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.16563rem; /* 140% */
+}
+
+.middle-card {
+    display: flex;
+    padding-bottom: var(--Spacing-Spacing-3Xl, 1.66513rem);
+    align-items: flex-end;
+    gap: 0.62444rem;
+    align-self: stretch;
+    border-bottom: 0.666px solid var(--Borders-Primary-Shade-02, #C6C4C4);
+}
+
+.amount {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 48px;
+    color: #333;
+}
+
+.amount p {
+    color: var(--Text-Text-Tertiary, #7D7D7D);
+    font-family: Inter;
+    font-size: 0.83256rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.16563rem; /* 140% */
+    
+}
+
+.amount h1 {
+    color: var(--Navy, #211E3E);
+    font-family: Inter;
+    font-size: 4.33456rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 114%; /* 4.94144rem */
+    letter-spacing: -0.26006rem;
+}
+
+.year {
+    color: var(--Text-Text-Tertiary, #7D7D7D);
+    font-family: Inter;
+    font-size: 0.83256rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.16563rem; /* 140% */
+}
+
+.bottom-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bottom-card ul li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    padding-left: 26px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path fill="none" stroke="%23AB1D22" stroke-width="2" d="M4 12l5 5L20 7"/></svg>') no-repeat left center;
+
+}
+
+.premium{
+    background: #F3F5F9;
+}
+
+.button.grey:hover {
+    background-color: #F3F5F9;
+}
+
+.immersive{
+    background: #EBF2FE;
+}
+
+
+.button.red:hover {
+    background-color: #EBF2FE;
+}
+
+
+.button.red {
+    background-color: #AB1D22;
+}
+
+button.red:hover {
+    background-color: #AB1D22;
+}
+
+
+#getstartedButton1, #getstartedButton2, #getstartedButton3, #getstartedButton4, #getstartedButton5{
+    width: auto;
+}  
+
+
+
+.text-getstarted{
+    color: var(--Text-Text-CTA, #FFF);
+text-align: center;
+
+/* Subheadline/Subheadline - Semibold */
+font-family: Inter;
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: 1.25rem; /* 133.333% */
+}
+
+
+/*commitment*/
+
+.commitment{
+    display: flex;
+    padding: 5rem 10rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.125rem;
+}
+
+.commitment p{
+    color: var(--Text-Text-Secondary, #474747);
+    text-align: center;
+
+    /* Title/LargeTitle 2 - ExtraLight */
+    font-family: Inter;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 1.4;
+    width: 39rem;
+}
+
+.contact-us p{
+    color: var(--Text-Text-Secondary, #474747);
+    text-align: center;
+
+    /* Title/LargeTitle 2 - ExtraLight */
+    font-family: Inter;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 1.4;
+
+}
+
+.stroke-little{
+    width: 2rem; /* Adjust the width as needed */
+    height: 0.6rem; /* Adjust the height as needed */
+    background-color: #AB1D22; /* Red color */
+    opacity: 0.7; /* Adjust the opacity as needed */
+    margin: 0.5rem 0; /* Adjust the margin as needed */
+    border-radius: 0.3rem; /* This will make the ends rounded */
+
+}
+
+
+
+
+
+/* Why Choose Us? Section */
+.why-choose-us {
+    display: flex;
+    align-items: center;
+    padding: 6.25rem 8%;
+    background-color: #F5F7FB; /* Light grey background */
+    justify-content: flex-start;
+    gap: 5rem;
+}
+
+.contact-image {
+    flex: 0.8;
+    background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/be2a1f689e02fa04aeaa036568707ebb51c56fd1/Content/why-choose-us.svg'); /* Replace with the path to your image */
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(20% 0%, 100% 30%, 85% 100%, 26% 95%);
+    height: 400px; /* Adjust height as needed */
+}
+
+.contact-info {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    
+}
+
+.contact-info h2 {
+    color: var(--Navy, #211E3E);
+
+    /* Title/Title2 */
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.75rem; /* 116.667% */
+}
+
+.contact-info h3 {
+    font-family: 'Inter', sans-serif;
+    color: #7D7D7D; /* Grey color */
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.5;
+    padding-right: 5rem;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.contact-info ul li {
+    font-family: 'Inter', sans-serif;
+    color: #211E3E; /* Dark Navy color */
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 30px;
+}
+
+.contact-info ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.2rem; /* Adjust this value to align the icon vertically */
+    width: 20px; /* Width of the tick icon */
+    height: 20px; /* Height of the tick icon */
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path fill="none" stroke="%23AB1D22" stroke-width="2" d="M4 12l5 5L20 7"/></svg>') no-repeat left center;
+    opacity: 60%;
+}
+
+
+
+
+
+
+/* Contact Us Section */
+
+
+.contact-us  {
+    display: flex;
+    padding: 6.25rem 0;
+    background-color: #E4E7EC ;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us-text{
+    display: flex;
+    width: 1123px;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    justify-content: flex-start;
+}
+
+
+.contact-us h2 {
+    color: var(--Navy, #211E3E);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.75rem; /* 116.667% */
+    width: 12rem;
+
+}
+
+.contact-us p {
+    color: var(--Text-Text-Tertiary, #7D7D7D);
+
+    font-family: Inter;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 1.4;
+    margin: 0;
+    text-align: left;
+}
+
+
+
+#letsTalk {
+    display: flex;
+    padding: var(--Spacing-Spacing-none, 0rem) var(--Spacing-Spacing-2Xl, 2rem);
+    justify-content: center;
+    align-items: center;
+    gap: var(--Spacing-Spacing-Xs, 0.25rem);
+    align-self: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 5rem;
+    border: 3px solid var(--Navy, #211E3E);
+    background-color: #E4E7EC;
+    height: 5rem;
+    width: auto; /* Set initial width */
+
+}
+
+#letsTalk .text, #letsTalk .arrow-icon {
+    transition: opacity 0.3s ease;
+}
+
+#letsTalk .arrow-icon {
+    display: none; /* Initially hide the arrow */
+}
+
+
+#letsTalk.hovered .arrow-icon {
+    display: inline-block; /* Show arrow on hover */
+}
+
+#letsTalk:hover {
+    border-color: #AB1D22; /* Change border color to red on hover */
+}
+
+#letsTalk:hover h2 {
+    color:  #AB1D22;
+}
+
+
+
+.contact-us .button:hover {
+    background-color: #1e1e4d; /* Background color on hover */
+    color: #FFFFFF; /* Text color on hover */
+}
+
+.contact-us .button .arrow-icon {
+    margin-left: 0.5rem; /* Space between text and arrow */
+}
+
+
+
+footer {
+    background-color: #1c1c2b;
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 8%;
+    margin-right: 8%;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--Borders-Secondary-Icons, #7D7D7D);
+    gap: 2rem;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    height: auto;
+}
+
+.footer-column h3 {
+    padding-left: 0; /* Ensure no padding on the left */
+    color: var(--Text-Text-Inverted, #FFF);
+    font-family: Inter;
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.375rem; /* 129.412% */
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    color: var(--Text-Text-Inverted, #FFF);
+    font-family: Inter;
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 1.375rem; /* 129.412% */
+    height: auto;
+    margin-block-start: 1em !important;
+}
+
+.footer-column ul li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: auto;
+}
+
+.footer-column ul li a {
+    position: relative; /* Add this to position the stroke */
+    padding-left: 0; /* Remove left padding to align with title */
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center align items */
+}
+
+.footer-column ul li a::before {
+    content: '';
+    position: absolute;
+    left: -25px; /* Adjust this value to align with title */
+    top: 0;
+    bottom: 0;
+    width: 5px; /* Adjust the width of the stroke */
+    background-color: #AB1D22; /* Adjust the color of the stroke */
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+}
+
+
+.footer-column ul li a:hover {
+    color: #C6C4C4;
+    font-weight: 500;
+    transform: translateX(10px);
+    transition: transform 0.3s ease;
+}
+
+.footer-column ul li a:hover::before {
+    transform: scaleY(1);
+}
+
+
+li.animate-link:hover {
+    transform: translateX(10px);
+    transition: transform 0.3s ease;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+    margin-bottom: 40px;
+    margin-left: 8%;
+    margin-right: 8%;
+    height: auto;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: var(--Text-Text-CTA, #FFF);
+    text-align: center;
+    font-family: Inter;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.25rem; /* 133.333% */
+}
+
+.footer-logo {
+    width: 6.5rem;
+    height: 3.66488rem;
+}
+
+
+.copyright{
+    display: none;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1676px) {
+    .header-image {
+        width: 100%;
+        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/1b4fad2ac78ea1b749b88853f05dc00b79835dd0/Content/2%20Plumbing%20Banner/main%20banner-right-image%202.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+
+@media screen and (max-width: 1655px) {
+    .pricing-cards {
+        transform: scale(0.9); /* Scale everything inside the container by 70% */
+        transform-origin: top left; /* Ensure scaling starts from the top left corner */
+        width: 111%;
+        height: fit-content;
+    }
+
+    .plan-pricing{
+        padding-bottom: 1rem;
+    }
+
+    
+}
+
+
+
+@media screen and (max-width: 1578px) {
+    .header-image {
+        width: 100%;
+        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/1b4fad2ac78ea1b749b88853f05dc00b79835dd0/Content/2%20Plumbing%20Banner/main%20banner-right-image%203.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .contact-info h3 {
+        padding-right: 0rem;
+    }
+    
+}
+
+@media screen and (max-width: 1572px) {
+
+}
+
+@media screen and (max-width: 1520px) {
+    .header-image {
+        width: 100%;
+        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/1b4fad2ac78ea1b749b88853f05dc00b79835dd0/Content/2%20Plumbing%20Banner/main%20banner-right-image%204.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 20rem;
+        
+    }
+
+    .main-header-text {
+        display: flex;
+        height: 20rem;
+}
+
+}
+
+@media screen and (max-width: 1492px) {
+    .pricing-cards {
+        transform: scale(0.8); /* Scale everything inside the container by 70% */
+        transform-origin: top left; /* Ensure scaling starts from the top left corner */
+        width: 125%;
+    }
+
+    .plan-pricing{
+        height:39rem ;
+    }
+    
+}
+
+
+@media screen and (max-width: 1345px) {
+    .header-image {
+        width: 100%;
+        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/1b4fad2ac78ea1b749b88853f05dc00b79835dd0/Content/2%20Plumbing%20Banner/main%20banner-right-image%205.svg');
+    }
+
+    .contact-us-text{
+        display: flex;
+        width: 100%;
+        padding: 0 8%;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+        justify-content: flex-start;
+    }
+
+   
+}
+
+@media screen and (max-width: 1326px) {
+
+    .pricing-cards {
+        transform: scale(0.88); 
+        transform-origin: top center; 
+        gap: 2rem;
+    }
+
+    .plan-pricing{
+        align-items: center;
+        height: 68rem ;
+    }
+
+    .pricing-cards{
+        width: 56rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* gap: 1rem;    */
+    }
+
+    .title-pricing{
+        width: 100%;
+    }
+    
+    .pricing-card-item{
+        height: 27.5rem;
+    }
+
+}
+ 
+
+@media screen and (max-width: 1266px) {
+
+    .why-choose-us {
+        gap: 3rem;
+        align-items: flex-start;
+    }
+
+    .contact-image {
+        flex: 0.4; /* Reduce the image size to 40% of the container's width */
+    }
+
+    
+
+    .contact-info {
+        flex: 0.6; /* Increase the space for the text to 60% of the container's width */
+        gap: 1ren;
+    }
+
+    .contact-info ul li {
+
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .contact-info {
+        max-width: 60%;
+    }
+}
+
+@media screen and (max-width: 1226px) {
+    .contact-us p {
+        color: var(--Text-Text-Tertiary, #7D7D7D);
+        font-family: Inter;
+        font-size: 1.6rem;
+    }
+
+    #letsTalk {
+        height: 3.7rem;
+    }
+
+    .contact-us h2 {
+        font-size: 1.3rem;
+        width: 10rem;
+
+    }
+
+}
+
+@media screen and (max-width: 1160px) {
+
+
+    h1{
+        font-size: 2.3rem;
+
+    }
+
+    .header-text-top {
+        width: 31rem;
+    }
+
+    
+
+    .main-header-text .button {
+        border: 2px solid
+    }
+
+    .footer-column ul li {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: auto;
+
+
+    }.footer-container{
+        gap: 1rem;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: 1110px) {
+
+    .right-nav .hamburger-icon {
+        display: inline-block;
+    }
+
+    .right-nav a{
+        display: none;
+    }
+
+    .stroke1{
+        display: none;
+    }
+
+    .right-nav {
+        width: 12.3125rem;
+    }
+
+    .middle-nav{
+        display: none;
+    }
+
+    h2{
+        font-size: 1.2rem;
+    }
+
+
+    .side-menu .menu-links {
+        padding: 10px 40px;
+        margin-top: 0px;
+        gap:0.5rem
+    }
+    
+    .side-menu .menu-links a{
+        font-size: 1rem; 
+    }
+    
+    .side-menu .menu-links h3{
+        font-size: 1.2rem;
+    
+    }
+
+    h4 {
+        font-size: 2.2rem;
+    }
+
+    h5 {
+        font-size: 1rem;
+        width: 35rem;
+        line-height: 1.6rem;
+    }
+
+    .service-content ul li, .contact-info h3 {
+        font-size: 1.1rem;
+    }
+
+    .help-section h3 {
+        font-size: 1.1rem;
+
+    }
+
+    .help-section h2,   {
+        font-size: 2.3rem;
+
+    }
+
+    .service-title h4, .title-pricing h2 {
+        font-size: 2rem;
+
+    }
+
+    .service-title {
+        width: 37rem;
+    }
+
+    .service-content {
+        width: 37rem;
+    }
+
+    .plan-pricing {
+        padding-bottom: 0rem;
+    }
+
+    .commitment p{
+        font-size: 1.5rem;
+        line-height: 1.4;
+        width: 40rem;
+    }
+
+    .contact-us p{
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+
+
+    .commitment {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        gap: 2rem;
+    }
+
+
+    .service-content ul li {
+      
+    line-height: 1.3;
+
+    }
+
+    .contact-info h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 1144px) {
+    .header-image {
+        width: 100%;
+        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/1b4fad2ac78ea1b749b88853f05dc00b79835dd0/Content/2%20Plumbing%20Banner/main%20banner-right-image%206.svg');
+    }
+}
+
+@media screen and (max-width: 1038px) {
+    #letsTalk {
+        height: 5rem
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .service-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .service-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .residential-wrapper {
+        height: auto;
+    }
+
+    /* .residential-wrapper img {
+        display: none;
+        width: 100%;
+        height: auto;
+        clip-path: none;
+    } */
+
+    
+    .service-item h3 {
+        text-align: left;
+    }
+}
+
+
+@media screen and (max-width: 968px) {
+
+
+    .services {
+        height: 12rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .service-title h4, .title-pricing h2 {
+        font-size: 1.6rem;
+        line-height: 1.4;
+    }
+
+    .service-content ul li, .contact-info h3 {
+        font-size: 1rem;
+    }
+
+    .service-item {
+        gap: 1.5rem;
+    }
+
+    .commercial {
+        height: 22.5rem !important;
+    }
+
+    .service-title, .service-content {
+        width: 33.8rem;
+
+    }
+
+    .help-section h3, .contact-info ul li  {
+        font-size: 1rem;
+    }
+
+    .header-text-top h3{
+
+        font-size: 1rem;
+        width: 25.8rem;
+    }
+
+    .title-pricing p {
+
+        font-size: 1rem;
+    }
+
+    .help-section h2 {
+        font-size: 2.1rem;
+    }
+
+    .commitment p {
+        font-size: 1.3rem;
+        line-height: 1.4;
+        width: 76%;
+    }
+
+
+    .contact-us p {
+        font-size: 1.3rem;
+        line-height: 1.4;
+    }
+
+    .commitment{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 950px) {
+
+    .main-header-text {
+        min-width: 28rem;
+    }
+    
+
+    .header-text-top {
+        width: 29rem;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 875px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+
+    
+    .header-text-top{
+        width: 100%;
+        align-items: center;
+    }
+
+
+    .header-image {
+        order: 1;
+        width: 100%;
+        height: 16rem;
+        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/1b4fad2ac78ea1b749b88853f05dc00b79835dd0/Content/2%20Plumbing%20Banner/Full%20image_plumbing.svg');
+    }
+
+
+    
+    .text , .text-getstarted {
+
+        font-size: 1rem;
+        font-weight: 500;
+
+    }
+    
+    .main-header-text {
+        order: 2;
+        width: 100%;
+        text-align: center;
+        height: auto;
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-top: 6%;
+        padding-bottom: 6%;
+    }
+
+    .main-header-text h1 {
+        margin: 0 auto;
+        width: 27rem;
+        font-weight: 300;
+        font-size: 1.8rem;
+    }
+
+    .main-header-text h3 {
+        margin: 0 auto;
+        width: 70%;
+        font-weight: 300;
+        font-size: 1rem;
+    }
+
+
+    .main-header-text .button {
+        margin: 0 auto;
+        border: 2px solid;
+    }
+
+    
+
+    .pricing-cards {
+        transform: scale(0.8); 
+        transform-origin: top center; 
+        gap: 2rem;
+    }
+
+    .plan-pricing{
+        align-items: center;
+        height: 63rem ;
+    }
+
+    .help-section{
+        align-items: center;
+    }
+
+    .help-section h3 {
+        text-align: center;
+        width: 90%;
+        line-height: 1.8rem;
+    }
+    
+    
+
+    .service-content ul {
+        padding-left: 0.5rem;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: left;
+        height: auto;
+        gap: 2.3rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+    }
+
+    .service-item {
+        margin-right: 0;
+        margin-bottom: 0rem; /* Add margin between stacked items */
+        order: 1;
+    }
+
+    .residential-wrapper img {
+        width: 100%;
+        clip-path: none; /* Remove clip-path for better display on small screens */
+        object-fit: cover;
+        height: 10rem ;
+        order: 0;
+    }
+
+    .residential-wrapper {
+        width: 100%; /* Ensures the image wrapper takes full width */
+        height: 10rem;
+    }
+
+    .service-content{
+        padding-left: 1rem;
+    }
+
+    .help-section h3, .contact-info ul li  {
+        width: 100%;
+    }
+
+    .commercial {
+        height: fit-content !important;
+    }
+
+    .service-content {
+        width: 100%;
+    }
+
+    .service-title {
+        width: 90%;
+    }
+
+
+    .management {
+        height: auto !important;
+    }
+
+    .help-section {
+        padding-top: 2.8rem;
+        padding-bottom: 2.8rem;
+        gap: 1.2rem;
+    }
+
+
+}
+
+@media screen and (max-width: 824px) {
+
+    .footer-column {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .main-header-text h3 {
+        width: 80%;
+}
+}
+
+@media screen and (max-width: 775px) {
+
+    .contact-us {
+        display: flex;
+        padding: 3rem 0;
+    }
+
+    .contact-us-text {
+        display: flex;
+        width: 100%;
+        padding: 0 8%;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.6rem;
+        justify-content: center;
+    }
+
+    .contact-us p {
+        text-align: center;
+    }
+
+    #letsTalk {
+        height: 4rem;
+    }
+
+    .contact-us h2 {
+        font-size: 1.1rem;
+        width: 8rem;
+
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+
+    .top-nav{
+        padding: 1.625rem 24px;
+    }
+
+    /* .help-section-wrapper{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+     */
+
+    .main-header-text {
+        padding-left: 0px;
+    }
+
+    .close-icon {
+        padding-right: 5px;
+    }
+
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    h5 {
+        width: 100%;
+    }
+
+    .service-title h4, .title-pricing h2 {
+        font-size: 1.4rem;
+    }
+
+    .service-title h4 {
+        width: 80%;
+    }
+
+    .contact-image {
+        flex: 0.35;
+        height: auto; /* Use auto to maintain aspect ratio */
+        min-height: 100%; /* Ensure the image container at least matches the parent's height */
+        background-size: cover; /* Ensure the image covers the container */
+        background-position: center; /* Center the image */
+        clip-path: none; /* Remove clip-path for a rectangular image */
+    }
+
+    .why-choose-us {
+        align-items: stretch; /* Align items to stretch to the same height */
+        gap: 2rem;
+    }
+
+    .contact-info ul li {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+
+
+    .contact-info {
+        gap: 1.3rem;
+    }
+
+    .contact-info h2 {
+        font-size: 1.1rem;
+    }
+
+    .footer-container {
+        margin-left: 8% ;
+        margin-right: 8%;
+    }
+    
+
+}
+
+
+@media screen and (max-width: 720px) {
+
+    .help-section h3{
+        width: 90%;
+    }
+
+    
+}
+@media screen and (max-width: 705px) {
+
+
+    .pricing-cards {
+        transform: scale(0.65); 
+    }
+
+    .plan-pricing{
+        height: 54rem ;
+
+    }
+
+
+}
+
+@media screen and (max-width: 690px) {
+
+    .footer-column ul li a {
+        font-size: 0.9rem;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        height: 1rem;
+    }
+
+    .copyright{
+        display: inline-block
+    }
+
+    .footer-bottom p{
+        text-align: left;
+        line-height: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 662px) {
+
+
+
+.main-header-text {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0%;
+    padding-right: 0%;
+    min-width: auto;
+}
+
+.main-header-text h3 {
+    width: 70%;
+}
+
+.pricing-cards {
+    width: 40rem;
+    transform: scale(0.7); 
+}
+
+.plan-pricing {
+    height: 77rem;
+}
+
+
+
+}
+
+@media screen and (max-width: 634px) {
+
+    .services{
+        width: auto;
+    }
+
+
+    .service-item{
+        width: auto;
+    }
+
+    .service-content ul li, .contact-info h3 {
+        font-size: 1rem;
+        width: auto;
+    }
+
+    .service-content ul {
+        width: auto;
+    }
+
+    .service-content {
+        width: auto;
+    }
+
+    .service-title{
+        width: auto;
+    }
+
+    .service-title h4 {
+        width: 100%;
+    }
+
+
+    .service-title {
+        padding-left: 0rem;
+    }
+
+    .service-content ul li {
+        padding-left: 0.2rem;
+    }
+
+
+}
+
+
+@media screen and (max-width: 588px) {
+
+.plan-pricing {
+    height: 79rem;
+}
+}
+
+
+
+@media screen and (max-width: 562px) {
+
+.main-header-text h1 {
+        /* width: 100%; */
+        font-weight: 300;
+        font-size: 1.5rem;
+}
+
+.main-header-text {
+    width: 100%;
+}
+
+.main-header-text h3 {
+    width: 23rem;
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+.left-nav img{
+    width: 5rem;
+}
+
+.top-nav {
+    padding: 1rem 24px;
+}
+
+.side-menu.open {
+    width: 100%;
+}
+
+.close-icon {
+    top: 20px;
+    right: 20px;
+}
+
+.side-menu .menu-links {
+    padding: 10px 40px;
+    gap: 0.2rem;
+    margin-top: 0px;
+}
+
+.side-menu .menu-links a{
+    font-size: 1rem; 
+}
+
+.side-menu .menu-links h3{
+    font-size: 1.2rem;
+
+}
+
+
+h5 {
+    font-size: 1rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+}
+
+
+.footer-logo {
+    width: 75%;
+}
+
+.header-image {
+    height: 12rem;
+    background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/1b4fad2ac78ea1b749b88853f05dc00b79835dd0/Content/2%20Plumbing%20Banner/Full%20image_plumbing.svg');
+}
+
+.help-section h3 {
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+    text-align: center;
+
+}
+
+.contact-info ul li  {
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+}
+
+.help-section{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.help-section h2 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.commitment p, .contact-us p{
+    font-size: 1.05rem;
+    line-height: 1.4;
+}
+
+.commitment {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    gap: 1rem;
+}
+
+
+.stroke-little {
+    width: 1.4rem;
+    height: 0.3rem;
+}
+
+
+.contact-info h2 {
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.contact-info ul li {
+    margin-bottom: 0rem;
+    width: fit-content;
+}
+
+
+.contact-image {
+    order: 1;               /* Ensure the image comes first */
+    width: 100%;            /* Full width */
+    height: auto;           /* Auto height to maintain aspect ratio */
+    min-height: 200px;      /* Ensure a minimum height */
+    clip-path: none;        /* Remove clip-path for full width display */
+    background-size: cover; /* Cover the full container */
+    background-position: center; /* Center the image */
+}
+
+.contact-info {
+    order: 2;               /* Ensure the text comes after the image */
+    padding: 0px;          /* Add some padding for spacing */
+    width: 100%;            /* Full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    max-width: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
+
+}
+
+.why-choose-us {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;    /* Center align items */
+    padding: 0;
+    padding-bottom: 3rem;             /* Remove padding */
+    width: 100%;
+}
+
+#letsTalk {
+    height: 3rem;
+    border: 2.6px solid var(--Navy, #211E3E);
+}
+
+.contact-us h2 {
+    font-size: 0.9rem;
+    width: 7rem;
+
+}
+
+.footer-container{
+    gap: 0rem;
+}
+
+
+
+}
+
+@media screen and (max-width: 560px) {
+    footer {
+        padding: 1.2rem 0;
+    }
+
+    .left-nav{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .footer-container {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .help-section-wrapper {
+        padding-left: 24px;
+        padding-right: 24px;
+    
+    }
+
+    .services{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .services::before {
+        left: 24px;
+        right: 24px;
+    }
+
+
+    .plan-pricing{
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .contact-info{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+
+
+@media screen and (max-width: 542px) {
+
+    /* 
+    .footer-column ul li {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: auto;
+    } */
+    
+    .footer-container{
+        gap: 0rem;
+    }
+    }
+
+
+@media screen and (max-width: 488px) {
+    
+    
+    .footer-bottom p {
+        font-size: 0.8rem;
+        text-align: center;
+        line-height: 1.4rem;
+    }
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding-top: 0rem;
+    }
+
+    .footer-logo {
+        width: 4rem;
+    }
+
+    .service-item h3 {
+        font-size: 1.25rem;
+    }
+
+    .service-content ul li, .contact-info h3, .contact-info ul li {
+        font-size: 0.875rem;
+    }
+
+    .service-title h4, .title-pricing h2 {
+        font-size: 1.2rem;
+    }
+    
+    .pricing-cards {
+        transform: scale(0.6); 
+    }
+
+    .plan-pricing {
+        gap: 2rem;
+        padding-top: 2rem;
+        height: 68rem;
+    }
+
+    .service-title img {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    .footer-container{
+        padding-top: 1rem;
+    }
+
+    .services {
+        gap: 2rem;
+
+    }
+
+}
+
+
+@media screen and (max-width: 430px) {
+
+
+    .main-header-text h1 {
+        width: 23rem;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+
+
+    .main-header-text h3 {
+        width: 80%;
+        font-weight: 200;
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+    }
+
+    .header-text-top{
+        gap: 0.9rem;
+    }
+
+    .button {
+        height: 2.8rem;
+    }
+
+    .text, .text-getstarted {
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+    .main-header-text{
+        gap: 1rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    h5 , .card p{
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+
+    .help-section h2 {
+        font-size: 1.4rem;
+    }
+
+    .help-section h3, .contact-info ul li  {
+        font-size: 0.8rem;
+    }
+
+    .help-section h3  {
+        line-height: 1.6;
+    }
+
+    .service-title h4 {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .services{
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        gap: 1.5rem;
+    }
+
+    .service-item{
+        gap: 1rem;
+    }
+
+    .commitment p {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+   .contact-us p{
+        font-size: 1rem;
+        line-height: 1.4;
+        color: var(--Text-Text-Tertiary, #5e5d5d);
+    }
+
+    .stroke-little {
+        width: 1.2rem;
+        height: 0.3rem;
+    }
+
+    .service-title img {
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+    
+    .service-title {
+        display: flex;
+        padding-left: 0rem;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .contact-info h2 {
+        font-size: 1rem;
+    }
+
+    .help-section{
+        gap: 0.7rem;
+        padding-top: 1.8rem;
+        padding-bottom: 1.8rem;
+    }
+
+    .service-content {
+        padding-left: 0.5rem;
+
+}
+
+}
+
+@media screen and (max-width: 394px) {
+
+    .pricing-cards {
+        width: 30rem;
+        transform: scale(0.65);     
+    }
+
+
+    
+
+    .plan-pricing {
+        gap: 2rem;
+        height: 108rem;
+    }
+
+    .pricing-card-item{
+        height: 24rem;
+    }
+
+    .premium {
+        height: 26rem;
+    }
+
+    .immersive {
+        height: 28rem;
+    }
+
+
+}
+
+@media screen and (max-width: 360px) {
+
+
+    .main-header-text h1 {
+        width: 60%;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.6rem;
+
+    }
+
+    .main-header-text h3 {
+        font-weight: 200;
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+
+
+    .left-nav img {
+        width: 4.4rem;
+    }
+
+    .top-nav {
+        padding: 0.8rem 24px;
+    }
+
+    .close-icon {
+        top: 12px;
+        right: 20px;
+    }
+
+    .help-section h3, .contact-info ul li  {
+        font-size: 0.8rem;
+        line-height: 1.6rem;
+
+    }
+
+
+}
+
+@media screen and (max-width: 305px) {
+
+.plan-pricing {
+    height: 110rem;
+}
+}
