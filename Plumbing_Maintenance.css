@@ -663,7 +663,6 @@ p {
 .service-title{
     width: 41rem;
     display: flex;
-    padding-left: var(--Spacing-Spacing-Lg, 1rem);
     align-items: center;
     gap: 1.25rem;
     /* margin-bottom: 1.5rem; */
@@ -674,12 +673,7 @@ p {
     height: 2rem;
 }
 
-.service-title {
-    display: flex;
-    padding-left: 1rem;
-    align-items: center;
-    gap: 1.25rem;
-}
+
 
 .service-title h4 {
     color: var(--Navy, #211E3E);
@@ -689,7 +683,7 @@ p {
     font-family: Inter;
     font-size: 2.3125rem;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     line-height: normal;
 }
 
@@ -983,7 +977,7 @@ line-height: 1.25rem; /* 133.333% */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3.125rem;
+    gap: 2rem;
 }
 
 .commitment p{
@@ -1073,8 +1067,8 @@ line-height: 1.25rem; /* 133.333% */
     font-weight: 300;
     line-height: 1.5;
     padding-right: 5rem;
+    width: 30rem;
 }
-
 .contact-info ul {
     list-style: none;
     padding: 0;
@@ -1475,19 +1469,18 @@ li:hover {
 @media screen and (max-width: 1266px) {
 
     .why-choose-us {
-        gap: 3rem;
-        align-items: flex-start;
+        gap: 4rem;
+        align-items: center;
+        justify-content: center;
     }
 
     .contact-image {
-        flex: 0.4; /* Reduce the image size to 40% of the container's width */
+        flex: 0.5; /* Reduce the image size to 40% of the container's width */
     }
-
-    
 
     .contact-info {
         flex: 0.6; /* Increase the space for the text to 60% of the container's width */
-        gap: 1ren;
+        gap: 1rem;
     }
 
     .contact-info ul li {
@@ -1499,6 +1492,11 @@ li:hover {
     .contact-info {
         max-width: 60%;
     }
+
+    .contact-image {
+        height: 350px;
+    }
+    
 }
 
 @media screen and (max-width: 1226px) {
@@ -1763,7 +1761,7 @@ li:hover {
     .commitment p {
         font-size: 1.3rem;
         line-height: 1.4;
-        width: 76%;
+        width: 40rem;
     }
 
 
@@ -1776,6 +1774,24 @@ li:hover {
         padding-left: 0;
         padding-right: 0;
     }
+
+    .contact-info h3 {
+        width: 21rem !important;
+    }
+
+    .why-choose-us {
+        gap: 3rem;
+    }
+
+    .service-title {
+        gap: 0.5rem;
+    }
+
+    .service-title h4 {
+
+        font-weight: 500;
+    }
+
 
 }
 
@@ -1957,6 +1973,12 @@ li:hover {
         margin-right: 0;
         margin-bottom: 0;
     }
+
+    .commitment p {
+        width: 30rem;
+    }
+
+
 }
 
 
@@ -1964,7 +1986,16 @@ li:hover {
 @media screen and (max-width: 800px) {
     .main-header-text h3 {
         width: 80%;
-}
+    }
+    .contact-image {
+        height: 300px;
+        flex: 0.4;
+    }
+
+    .why-choose-us{
+        gap: 1.8rem;
+    }
+
 }
 
 @media screen and (max-width: 775px) {
@@ -2367,6 +2398,10 @@ h4 {
     gap: 0rem;
 }
 
+.commitment p {
+    width: 25rem;
+}
+
 
 
 }
@@ -2489,6 +2524,13 @@ h4 {
 
     }
 
+}
+
+@media screen and (max-width: 440px) {
+
+    .commitment p {
+        width: 18rem;
+    }
 }
 
 
@@ -2670,7 +2712,7 @@ h4 {
         right: 20px;
     }
 
-    .help-section h3, .contact-info ul li  {
+    .contact-info ul li  {
         font-size: 0.8rem;
         line-height: 1.6rem;
 
@@ -2678,7 +2720,12 @@ h4 {
 
 
 }
+@media screen and (max-width: 320px) {
 
+.commitment p {
+    width: 80%;
+}
+}
 @media screen and (max-width: 305px) {
 
 .plan-pricing {
