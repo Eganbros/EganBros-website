@@ -1873,7 +1873,16 @@ li:hover {
     .help-section h3 {
         text-align: center;
         width: 90%;
+        line-height: 1.8rem;
     }
+
+    .help-section {
+        padding-top: 2.8rem;
+        padding-bottom: 2.8rem;
+        gap: 1.2rem;
+    }
+
+    
 
 
 }
@@ -2546,6 +2555,10 @@ h4 {
         font-size: 0.8rem;
     }
 
+    .help-section h3{
+        line-height: 1.4rem;;
+    }
+
     .service-title h4 {
         font-size: 1rem;
     }
@@ -2560,11 +2573,17 @@ h4 {
         gap: 1rem;
     }
 
-    .commitment p, .contact-us p{
-        font-size: 0.9rem;
+    .commitment p {
+        font-size: 1rem;
         line-height: 1.4;
     }
 
+   .contact-us p{
+        font-size: 1rem;
+        line-height: 1.4;
+        color: var(--Text-Text-Tertiary, #5e5d5d);
+    }
+    
     .stroke-little {
         width: 1.2rem;
         height: 0.3rem;
@@ -2590,6 +2609,14 @@ h4 {
         font-size: 0.9rem;
         line-height: 1.2rem;
     }
+
+    .help-section{
+        gap: 1rem;
+        padding-top: 1.8rem;
+        padding-bottom: 1.8rem;
+    }
+
+
 
 
 
