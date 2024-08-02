@@ -1043,6 +1043,10 @@ li:hover {
 
 }
 
+.iso {
+    width: 6rem ;
+}
+
 
 
 @media screen and (max-width: 1930px) {
@@ -1505,6 +1509,8 @@ li:hover {
     .certifications {
         width: 100%;
         gap:0;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
     }
 
     .certification-item {
@@ -1855,6 +1861,18 @@ footer {
         width: 4rem;
     }
 
+    .stat h3 {
+        font-size: 1.7rem;
+    }
+
+    .deployment h4 {
+        margin-bottom: 1rem;
+    }
+
+    .deployment {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
 
     
 }
@@ -1865,9 +1883,39 @@ footer {
         margin-top: 0rem; /* Add space after the third item */
     }
 
-    .certifications {
-        gap: 2rem;    
+    .certifications {  
+        flex-direction: row;  
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
     }
+
+    .certification-item{
+        transform: scale(0.8);
+        flex-direction: column;
+    }
+
+    .iso {
+        width: 50% !important;
+    }
+
+    .feedback{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .deployment{
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .deployment h4 {
+        margin-bottom: 1rem;
+    }
+
+    
 }
 
 @media screen and (max-width: 430px) {
@@ -1903,7 +1951,7 @@ footer {
         font-size: 0.8rem;
         font-weight: 500;
 
-}
+    }
 
     .main-header-text{
         gap: 1rem;
@@ -1930,10 +1978,37 @@ footer {
     }
 
     .stat h3 {
-        font-size: 1.6rem;
-
+        font-size: 1.4rem;
     }
 
+    .stat {
+
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    }
+
+    .card-text {
+        gap: 0.5rem;
+    }
+
+    .card-text img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .deployment-stats {
+        gap: 0.5rem;
+    }
+
+    .deployment h4 {
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+
+    .deployment {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
 
 
 }
