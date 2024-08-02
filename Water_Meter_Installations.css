@@ -499,7 +499,7 @@ h1 {
 .header-image {
     width: 100%;
     height: 23.625rem;
-    background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/1b4fad2ac78ea1b749b88853f05dc00b79835dd0/Content/2%20Plumbing%20Banner/main%20banner-right-image%201.svg');
+    background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/17aa0cac5f6c55876490922eb78cc15658f158ef/Content/3%20Water%20Banner/main%20banner-right-image%201.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -617,7 +617,7 @@ p {
     align-items: stretch; /* Ensure items stretch to match the tallest item */
     padding: 4rem 8%;
     gap: 5%; /* Adjust gap between items */
-    height: 17rem;
+    height: 20rem;
     position: relative; /* Ensure the stroke is positioned relative to .services */
 }
 
@@ -659,7 +659,7 @@ p {
 
 
 .service-title{
-    width: 41rem;
+    width: 43rem;
     display: flex;
     padding-left: var(--Spacing-Spacing-Lg, 1rem);
     align-items: center;
@@ -981,7 +981,7 @@ line-height: 1.25rem; /* 133.333% */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3.125rem;
+    gap: 2rem;
 }
 
 .commitment p{
@@ -1071,6 +1071,7 @@ line-height: 1.25rem; /* 133.333% */
     font-weight: 300;
     line-height: 1.5;
     padding-right: 5rem;
+    width: 30rem;
 }
 
 .contact-info ul {
@@ -1343,7 +1344,7 @@ li:hover {
 @media screen and (max-width: 1676px) {
     .header-image {
         width: 100%;
-        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/1b4fad2ac78ea1b749b88853f05dc00b79835dd0/Content/2%20Plumbing%20Banner/main%20banner-right-image%202.svg');
+        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/17aa0cac5f6c55876490922eb78cc15658f158ef/Content/3%20Water%20Banner/main%20banner-right-image%202.svg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -1371,7 +1372,7 @@ li:hover {
 @media screen and (max-width: 1578px) {
     .header-image {
         width: 100%;
-        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/1b4fad2ac78ea1b749b88853f05dc00b79835dd0/Content/2%20Plumbing%20Banner/main%20banner-right-image%203.svg');
+        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/17aa0cac5f6c55876490922eb78cc15658f158ef/Content/3%20Water%20Banner/main%20banner-right-image%203.svg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -1390,7 +1391,7 @@ li:hover {
 @media screen and (max-width: 1520px) {
     .header-image {
         width: 100%;
-        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/1b4fad2ac78ea1b749b88853f05dc00b79835dd0/Content/2%20Plumbing%20Banner/main%20banner-right-image%204.svg');
+        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/17aa0cac5f6c55876490922eb78cc15658f158ef/Content/3%20Water%20Banner/main%20banner-right-image%204.svg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -1422,7 +1423,7 @@ li:hover {
 @media screen and (max-width: 1345px) {
     .header-image {
         width: 100%;
-        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/1b4fad2ac78ea1b749b88853f05dc00b79835dd0/Content/2%20Plumbing%20Banner/main%20banner-right-image%205.svg');
+        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/17aa0cac5f6c55876490922eb78cc15658f158ef/Content/3%20Water%20Banner/main%20banner-right-image%205.svg');
     }
 
     .contact-us-text{
@@ -1473,19 +1474,18 @@ li:hover {
 @media screen and (max-width: 1266px) {
 
     .why-choose-us {
-        gap: 3rem;
-        align-items: flex-start;
+        gap: 4rem;
+        align-items: center;
+        justify-content: center;
     }
 
     .contact-image {
-        flex: 0.4; /* Reduce the image size to 40% of the container's width */
+        flex: 0.5; /* Reduce the image size to 40% of the container's width */
     }
-
-    
 
     .contact-info {
         flex: 0.6; /* Increase the space for the text to 60% of the container's width */
-        gap: 1ren;
+        gap: 1rem;
     }
 
     .contact-info ul li {
@@ -1497,8 +1497,12 @@ li:hover {
     .contact-info {
         max-width: 60%;
     }
-}
 
+    .contact-image {
+        height: 350px;
+    }
+    
+}
 @media screen and (max-width: 1226px) {
     .contact-us p {
         color: var(--Text-Text-Tertiary, #7D7D7D);
@@ -1624,7 +1628,7 @@ li:hover {
     }
 
     .service-title {
-        width: 37rem;
+        width: 40rem;
     }
 
     .service-content {
@@ -1668,7 +1672,7 @@ li:hover {
 @media screen and (max-width: 1144px) {
     .header-image {
         width: 100%;
-        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/1b4fad2ac78ea1b749b88853f05dc00b79835dd0/Content/2%20Plumbing%20Banner/main%20banner-right-image%206.svg');
+        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/17aa0cac5f6c55876490922eb78cc15658f158ef/Content/3%20Water%20Banner/main%20banner-right-image%206.svg');
     }
 }
 
@@ -1712,7 +1716,7 @@ li:hover {
 
 
     .services {
-        height: 12rem;
+        height: 18rem;
         padding-top: 4rem;
         padding-bottom: 4rem;
     }
@@ -1761,9 +1765,8 @@ li:hover {
     .commitment p {
         font-size: 1.3rem;
         line-height: 1.4;
-        width: 76%;
+        width: 30rem;
     }
-
 
     .contact-us p {
         font-size: 1.3rem;
@@ -1773,6 +1776,9 @@ li:hover {
     .commitment{
         padding-left: 0;
         padding-right: 0;
+        padding-bottom: 3rem;
+        padding-top: 3rem;
+        gap: 1rem;
     }
 
 }
@@ -1813,7 +1819,7 @@ li:hover {
         order: 1;
         width: 100%;
         height: 16rem;
-        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/1b4fad2ac78ea1b749b88853f05dc00b79835dd0/Content/2%20Plumbing%20Banner/Full%20image_plumbing.svg');
+        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/17aa0cac5f6c55876490922eb78cc15658f158ef/Content/3%20Water%20Banner/full%20size_water.svg');
     }
 
 
@@ -1954,6 +1960,10 @@ li:hover {
         margin-left: 0;
         margin-right: 0;
         margin-bottom: 0;
+    }
+
+    .commitment p {
+        width: 30rem;
     }
 }
 
@@ -2264,7 +2274,7 @@ h4 {
 
 .header-image {
     height: 12rem;
-    background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/1b4fad2ac78ea1b749b88853f05dc00b79835dd0/Content/2%20Plumbing%20Banner/Full%20image_plumbing.svg');
+    background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/17aa0cac5f6c55876490922eb78cc15658f158ef/Content/3%20Water%20Banner/full%20size_water.svg');
 }
 
 .help-section h3 {
@@ -2410,6 +2420,10 @@ h4 {
         padding-left: 24px;
         padding-right: 24px;
     }
+
+    .commitment p {
+        width: 26rem;
+    }
 }
 
 
@@ -2489,7 +2503,18 @@ h4 {
 
 }
 
+@media screen and (max-width: 440px) {
 
+    .commitment p {
+        width: 16rem;
+    }
+
+    .commitment {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        gap: 1rem;
+}
+}
 @media screen and (max-width: 430px) {
 
 
@@ -2602,7 +2627,6 @@ h4 {
 
     .service-content {
         padding-left: 0.5rem;
-
 }
 
 }
