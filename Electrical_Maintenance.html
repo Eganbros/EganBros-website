@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        (function (m, a, z, e) {
+          var s, t;
+          try {
+            t = m.sessionStorage.getItem('maze-us');
+          } catch (err) {}
+        
+          if (!t) {
+            t = new Date().getTime();
+            try {
+              m.sessionStorage.setItem('maze-us', t);
+            } catch (err) {}
+          }
+        
+          s = a.createElement('script');
+          s.src = z + '?t=' + t + '&apiKey=' + e;
+          s.async = true;
+          a.getElementsByTagName('head')[0].appendChild(s);
+          m.mazeUniversalSnippetApiKey = e;
+        })(window, document, 'https://snippet.maze.co/maze-universal-loader.js', 'e0a92543-d818-43cc-a158-5aecd97d6336');
+        </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JL753SVNLF"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-JL753SVNLF');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egan Bros.</title>
+
+    <link rel="stylesheet" href="./Electrical_Maintenance.css">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="icon" href="https://raw.githubusercontent.com/Eganbros/EganBros-website/c6a48ae561e9f646fda3cede8d693e34ae241e14/Content/Logo.svg" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <nav class="top-nav">
+        <div class="left-nav">
+            <a href="./index.html"><img class="logo-img" src="https://raw.githubusercontent.com/Eganbros/EganBros-website/c6a48ae561e9f646fda3cede8d693e34ae241e14/Content/Logo.svg" alt="logo"></a>
+        </div>
+
+        <div class="middle-nav">
+            <div class="nav-section dropdown">
+                <div class="nav-alignment">
+                <h3 class="dropbtn">Services</h3>
+                <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/c6a48ae561e9f646fda3cede8d693e34ae241e14/Content/chevron-down.svg" alt="chevron" class="chevron-icon" id="chevron-icon-services">
+                </div>  
+                <div class="dropdown-content">
+                    <a href="./Safety_and_Compliance.html">Safety & Compliance</a>
+                    <a href="./Plumbing_Maintenance.html">Plumbing Maintenance</a>
+                    <a href="./Water_Meter_Installations.html">Water Meter Installations</a>
+                    <a href="./Confined_Space_Access_Works.html">Confined Space Access Works</a>
+                    <a href="./Electrical_Maintenance.html">Electrical Maintenance</a>
+                    <a href="./Car_Charging_Installation.html">Car Charging Installation</a>
+                </div>
+            </div>
+
+            <div class="nav-section dropdown">
+                <div class="nav-alignment">
+                <h3 class="dropbtn">Case Studies</h3>
+                <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/c6a48ae561e9f646fda3cede8d693e34ae241e14/Content/chevron-down.svg" alt="chevron" class="chevron-icon" id="chevron-icon-case-studies">
+                </div>
+                <div class="dropdown-content">
+                    <a href="#">Case Study 1</a>
+                    <a href="#">Case Study 2</a>
+                    <a href="#">Case Study 3</a>
+                </div>
+            </div>
+
+            <div class="nav-section dropdown">
+                <div class="nav-alignment">
+                <h3 class="dropbtn">About</h3>
+                <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/c6a48ae561e9f646fda3cede8d693e34ae241e14/Content/chevron-down.svg" alt="chevron" class="chevron-icon" id="chevron-icon-about">
+                </div>
+                <div class="dropdown-content">
+                    <a href="#">About Us</a>
+                    <a href="#">Meet The Team</a>
+                    <a href="#">Certifications</a>
+                    <a href="#">Our Offices</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="right-nav">
+            <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/c6a48ae561e9f646fda3cede8d693e34ae241e14/Content/Line.svg" alt="stroke" class="stroke1">
+
+            <a href="#" class="button" id="contactButton">
+                <span class="text">Contact Us</span>
+                <img class="arrow-icon" src="https://raw.githubusercontent.com/Eganbros/EganBros-website/d2a3b6c2af1869836f78226b48d8f30b279c1d54/Content/red-arrow-CTA.svg" alt="Arrow">
+            </a>
+            <div id="hamburgerMenu" class="hamburger-icon">
+                <img src="https://raw.githubusercontent.com/em-egan/GA-Final_Project/72ac1a0315ba5040f7ec9acf95c122f3a8da8e05/3%20UI%20Elements/Hamburger2.svg" alt="Menu">
+            </div>
+        </div>
+    </nav> 
+
+    <!-- Right Side Menu -->
+    <div id="rightSideMenu" class="side-menu">
+        <div class="menu-header">
+            <span id="closeMenu" class="close-icon">&times;</span>
+        </div>
+        <nav class="menu-links" id="menuLinks">
+            <!-- Links will be dynamically added here -->
+        </nav>
+    </div>
+
+    <main>
+        <div class="main-header-text">
+            <div class="header-text-top">
+                <h4>Electrical Maintenance</h4>
+                <h3>We provide comprehensive electrical maintenance services designed to prevent issues and extend the lifespan of your equipment.</h3>
+            </div>
+        </div>
+    
+        <div class="header-image"></div>
+    </main>
+
+    <section class="help-section-wrapper">
+        <div class="help-section">
+            <h2>How can we help?</h2>
+            <h3>We recognise the importance of regular electrical maintenance to ensure the safety, efficiency, and reliability of your electrical systems. Our expert team provides comprehensive electrical maintenance services designed to prevent issues, extend the lifespan of your equipment, and ensure compliance with safety standards.</h3>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="service-item">
+            <div class="service-title">
+                <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/51fcafbd8821061ffc4e15254a85c3bd42caed85/Content/black%20single%20arrow.svg" alt="arrow-symbol">
+                <h4>Routine Inspections</h4>
+            </div>
+            <div class="service-content">
+                <ul>
+                    <li>Comprehensive inspection of all electrical systems and components</li>
+                    <li>Identification of potential hazards and early warning signs</li>
+                    <li>Detailed reporting on the condition and performance of your electrical infrastructure</li>
+                </ul>
+            </div>
+        </div>
+        <div class="residential-wrapper">
+            <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/98053e31e96f269c01a10926096a13431255d363/Content/5%20Electrical%20Banner/1%20routine.svg" alt="Routine Inspections" class="residential">
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="service-item">
+            <div class="service-title">
+                <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/51fcafbd8821061ffc4e15254a85c3bd42caed85/Content/black%20single%20arrow.svg" alt="arrow-symbol">
+                <h4>Testing and Tagging</h4>
+            </div>
+            <div class="service-content">
+                <ul>
+                    <li>Regular testing and tagging of electrical appliances and equipment</li>
+                    <li>Ensuring compliance with Australian safety standards</li>
+                    <li>Detailed records and documentation for audit purposes</li>
+                </ul>
+            </div>
+        </div>
+        <div class="residential-wrapper">
+            <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/98053e31e96f269c01a10926096a13431255d363/Content/5%20Electrical%20Banner/2%20testing.svg" alt="Testing and Tagging" class="residential">
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="service-item">
+            <div class="service-title">
+                <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/51fcafbd8821061ffc4e15254a85c3bd42caed85/Content/black%20single%20arrow.svg" alt="arrow-symbol">
+                <h4>Switchboard Maintenance</h4>
+            </div>
+            <div class="service-content">
+                <ul>
+                    <li>Inspection and testing of switchboards to ensure safe operation</li>
+                    <li>Upgrading and replacement of outdated or faulty switchboards</li>
+                    <li>Ensuring compliance with current safety regulations</li>
+                </ul>
+            </div>
+        </div>
+        <div class="residential-wrapper">
+            <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/98053e31e96f269c01a10926096a13431255d363/Content/5%20Electrical%20Banner/3%20switchboard.svg" alt="Switchboard Maintenance" class="residential">
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="service-item">
+            <div class="service-title">
+                <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/51fcafbd8821061ffc4e15254a85c3bd42caed85/Content/black%20single%20arrow.svg" alt="arrow-symbol">
+                <h4>Lighting Maintenance</h4>
+            </div>
+            <div class="service-content">
+                <ul>
+                    <li>Regular maintenance of all lighting systems, including indoor and outdoor lighting</li>
+                    <li>Replacement of faulty bulbs, fixtures, and components</li>
+                    <li>Energy-efficient lighting solutions to reduce power consumption</li>
+                </ul>
+            </div>
+        </div>
+        <div class="residential-wrapper">
+            <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/98053e31e96f269c01a10926096a13431255d363/Content/5%20Electrical%20Banner/4%20lighting.svg" alt="Lighting Maintenance" class="residential">
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="service-item">
+            <div class="service-title">
+                <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/51fcafbd8821061ffc4e15254a85c3bd42caed85/Content/black%20single%20arrow.svg" alt="arrow-symbol">
+                <h4>Circuit and Wiring Maintenance</h4>
+            </div>
+            <div class="service-content">
+                <ul>
+                    <li>Inspection and maintenance of electrical circuits and wiring</li>
+                    <li>Identification and repair of faulty or damaged wiring</li>
+                    <li>Upgrading of electrical systems to meet current standards and demands</li>
+                </ul>
+            </div>
+        </div>
+        <div class="residential-wrapper">
+            <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/98053e31e96f269c01a10926096a13431255d363/Content/5%20Electrical%20Banner/5%20circuit.svg" alt="Circuit and Wiring Maintenance" class="residential">
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="service-item">
+            <div class="service-title">
+                <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/51fcafbd8821061ffc4e15254a85c3bd42caed85/Content/black%20single%20arrow.svg" alt="arrow-symbol">
+                <h4>Safety Device Testing</h4>
+            </div>
+            <div class="service-content">
+                <ul>
+                    <li>Regular testing of safety devices such as circuit breakers, RCDs, and smoke alarms</li>
+                    <li>Ensuring all safety devices are functioning correctly and meet regulatory standards</li>
+                    <li>Replacement and upgrading of safety devices as needed</li>
+                </ul>
+            </div>
+        </div>
+        <div class="residential-wrapper">
+            <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/98053e31e96f269c01a10926096a13431255d363/Content/5%20Electrical%20Banner/6%20safety.svg" alt="Safety Device Testing" class="residential">
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="service-item">
+            <div class="service-title">
+                <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/51fcafbd8821061ffc4e15254a85c3bd42caed85/Content/black%20single%20arrow.svg" alt="arrow-symbol">
+                <h4>Emergency Electrical Services</h4>
+            </div>
+            <div class="service-content">
+                <ul>
+                    <li>24/7 emergency response for urgent electrical issues</li>
+                    <li>Rapid diagnosis and resolution of emergency situations</li>
+                    <li>Minimisation of risk and disruption to your property or business</li>
+                </ul>
+            </div>
+        </div>
+        <div class="residential-wrapper">
+            <img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/b835d07f992b33f672c528b2141229c98e52ae90/Content/2%20Plumbing%20Banner/7%20Emergency%20Plumbing%20Services.svg" alt="Emergency Electrical Services" class="residential">
+        </div>
+    </section>
+
+
+    <section class="commitment">
+        <p>Regular electrical maintenance is crucial to ensure the safety and efficiency of your electrical systems, preventing costly repairs and potential hazards.</p>
+        <div class="stroke-little"></div>
+    </section>
+    
+
+    <!-- Why Choose Us? Section -->
+    <section class="why-choose-us">
+        <div class="contact-image"></div>
+        <div class="contact-info">
+            <h2>Why Choose Us?</h2>
+            <h3>Trust Egan Brothers Plumbing & Electrical for all your confined space plumbing needs in Victoria.</h3>
+            <ul>
+                <li>Experienced and qualified technicians</li>
+                <li>Use of advanced technology and equipment</li>
+                <li>Compliance with all safety standards</li>
+                <li>Transparent and detailed reporting</li>
+                <li>Prompt and reliable service</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact-us">
+        <div class="contact-us-text">
+            <p>Contact us today to schedule your electrical maintenance and experience the Egan Brothers difference.</p>
+            <a href="#" class="button letsTalkone" id="letsTalk">
+                <h2>Let's Talk -></h2>
+                <img class="arrow-icon" src="https://raw.githubusercontent.com/Eganbros/EganBros-website/d2a3b6c2af1869836f78226b48d8f30b279c1d54/Content/red-arrow-CTA.svg" alt="Arrow">
+            </a>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li class="animate-link"><a href="#">About</a></li>
+                    <li class="animate-link"><a href="#">Meet the Team</a></li>
+                    <li class="animate-link"><a href="#">Contact</a></li>
+                    <li class="animate-link"><a href="#">Certifications</a></li>
+                    <li class="animate-link"><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Services</h3>
+                <ul>
+                    <li class="animate-link"><a href="./Safety_and_Compliance.html">Safety & Compliance</a></li>
+                    <li class="animate-link"><a href="./Plumbing_Maintenance.html">Plumbing Maintenance</a></li>
+                    <li class="animate-link"><a href="./Water_Meter_Installations.html">Water Meter Installations</a></li>
+                    <li class="animate-link"><a href="./Confined_Space_Access_Works.html">Confined Space Access Works</a></li>
+                    <li class="animate-link"><a href="./Electrical_Maintenance.html">Electrical Maintenance</a></li>
+                    <li class="animate-link"><a href="./Car_Charging_Installation.html">Car Charging Installation</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Case Studies</h3>
+                <ul>
+                    <li class="animate-link"><a href="#">Case name</a></li>
+                    <li class="animate-link"><a href="#">Case name</a></li>
+                    <li class="animate-link"><a href="#">Case name</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Careers</h3>
+                <ul>
+                    <li class="animate-link"><a href="#">Join Our Team</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Copyright 2024 Egan Bros. <br class="copyright">All rights reserved.</p>
+            <a href="./index.html"><img src="https://raw.githubusercontent.com/Eganbros/EganBros-website/658b88d21e699d5d39882b004ade4840e3b7d005/Content/white%20logo.svg" alt="Egan Bros. Logo" class="footer-logo"></a>
+        </div>
+    </footer>
+
+
+    <script src="./Electrical_Maintenance.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</body>
