@@ -2176,6 +2176,17 @@ li:hover {
     .service-title h4 {
         width: 100%;
     }
+
+
+    .service-title {
+        padding-left: 0rem;
+    }
+
+    .service-content ul li {
+        padding-left: 0.2rem;
+    }
+
+
 }
 
 
@@ -2371,6 +2382,38 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
+
+    .footer-container {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .help-section-wrapper {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+
+    .services{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .services::before {
+        left: 24px;
+        right: 24px;
+    }
+
+    .plan-pricing{
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .contact-info{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
 }
 
 @media screen and (max-width: 542px) {
