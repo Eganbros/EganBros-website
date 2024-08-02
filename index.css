@@ -2010,6 +2010,10 @@ footer {
         margin-bottom: 1rem;
     }
 
+    .card-text {
+        padding: 16px;
+    }
+
 
 }
 
