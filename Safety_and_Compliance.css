@@ -2555,13 +2555,19 @@ h4 {
         font-size: 0.8rem;
     }
 
+    .help-section h3  {
+        line-height: 1.6;
+    }
+
     .help-section h3{
         line-height: 1.4rem;;
     }
 
     .service-title h4 {
         font-size: 1rem;
+        font-weight: 700;
     }
+    
 
     .services{
         padding-top: 2rem;
@@ -2590,15 +2596,16 @@ h4 {
     }
 
     .service-title img {
-        width: 1.5rem;
-        height: 1.5rem;
+        width: 1.3rem;
+        height: 1.3rem;
     }
+    
     
     .service-title {
         display: flex;
-        padding-left: 0.5rem;
+        padding-left: 0rem;
         align-items: center;
-        gap: 0.8rem;
+        gap: 0.5rem;
     }
 
     .contact-info h2 {
@@ -2615,6 +2622,12 @@ h4 {
         padding-top: 1.8rem;
         padding-bottom: 1.8rem;
     }
+
+
+    .service-content {
+        padding-left: 0.5rem;
+
+}
 
 }
 
