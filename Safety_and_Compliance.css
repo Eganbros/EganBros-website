@@ -657,7 +657,7 @@ p {
 .service-title{
     width: 43rem;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 1.25rem;
     /* margin-bottom: 1.5rem; */
 }
@@ -665,6 +665,7 @@ p {
 .service-title img {
     width: 2rem;
     height: 2rem;
+    padding-top: 0.5rem;
 }
 
 
@@ -2525,7 +2526,7 @@ h4 {
     }
 
     .header-text-top{
-        gap: 0.9rem;
+        gap: 0.4rem;
     }
 
     .button {
