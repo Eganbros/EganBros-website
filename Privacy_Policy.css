@@ -153,6 +153,8 @@ a {
     padding-right: 0px;
     text-decoration: none;
     width: auto;
+    color: inherit; /* Inherits the color from the parent element */
+
 }
 
 /* Dropdown Container */
@@ -2561,9 +2563,6 @@ h4 {
         padding-right: 24px;
     }
 
-    .contact-info ul li {
-        margin-bottom: 1rem;
-    }
 
 
 }
@@ -2789,7 +2788,7 @@ h4 {
 } 
 
 .contact-information{
-    gap: 0;
+    gap: 0.5rem;
 }
 
 .info-line img {
