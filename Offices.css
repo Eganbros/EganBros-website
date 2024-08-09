@@ -1828,10 +1828,15 @@ gap: var(--Spacing-Spacing-Sm, 0.5rem);
         font-size: 2.1rem;
     }
 
-    .commitment p, .service-content h2 {
+    .commitment p {
         font-size: 1.3rem;
         line-height: 1.4;
         width: 28rem;
+    }
+
+    .service-content h2 {
+        font-size: 1.3rem;
+        line-height: 1.4;
     }
 
 
