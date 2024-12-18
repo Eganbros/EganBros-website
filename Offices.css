@@ -501,7 +501,7 @@ h1 {
 .header-image {
     width: 100%;
     height: 23.625rem;
-    background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/90aa2e550f32143de931c00d473c8e38ab8ede9f/Content/7%20Offices/Offices-main%20banner-right-image%201.svg');
+    background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/0fdb13ff42426dc0a2f0e85d47e6c64da08a40df/Content/7%20Offices/Offices%20banner%201.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1050,7 +1050,7 @@ line-height: 1.25rem; /* 133.333% */
 
 .contact-image {
     flex: 0.8;
-    background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/be2a1f689e02fa04aeaa036568707ebb51c56fd1/Content/why-choose-us.svg'); /* Replace with the path to your image */
+    background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/951fe0ee6ee3bf203933c59486b2a45e7211aed5/Content/why%20choose%20us%20high%20res.svg'); /* Replace with the path to your image */
     background-size: cover;
     background-position: center;
     clip-path: polygon(20% 0%, 100% 30%, 85% 100%, 26% 95%);
@@ -1243,7 +1243,7 @@ footer {
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     margin-left: 8%;
     margin-right: 8%;
@@ -1257,6 +1257,7 @@ footer {
 .footer-column {
     flex: 1;
     min-width: 200px;
+    max-width: 300px;
     margin: 10px;
     height: auto;
 }
@@ -1390,7 +1391,7 @@ gap: var(--Spacing-Spacing-Sm, 0.5rem);
 @media screen and (max-width: 1676px) {
     .header-image {
         width: 100%;
-        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/90aa2e550f32143de931c00d473c8e38ab8ede9f/Content/7%20Offices/Offices-main%20banner-right-image%202.svg');
+        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/0fdb13ff42426dc0a2f0e85d47e6c64da08a40df/Content/7%20Offices/Offices%20banner%202.svg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -1418,7 +1419,7 @@ gap: var(--Spacing-Spacing-Sm, 0.5rem);
 @media screen and (max-width: 1578px) {
     .header-image {
         width: 100%;
-        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/90aa2e550f32143de931c00d473c8e38ab8ede9f/Content/7%20Offices/Offices-main%20banner-right-image%203.svg');
+        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/0fdb13ff42426dc0a2f0e85d47e6c64da08a40df/Content/7%20Offices/Offices%20banner%203.svg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -1437,7 +1438,7 @@ gap: var(--Spacing-Spacing-Sm, 0.5rem);
 @media screen and (max-width: 1520px) {
     .header-image {
         width: 100%;
-        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/90aa2e550f32143de931c00d473c8e38ab8ede9f/Content/7%20Offices/Offices-main%20banner-right-image%204.svg');
+        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/0fdb13ff42426dc0a2f0e85d47e6c64da08a40df/Content/7%20Offices/Offices%20banner%204.svg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -1469,7 +1470,7 @@ gap: var(--Spacing-Spacing-Sm, 0.5rem);
 @media screen and (max-width: 1345px) {
     .header-image {
         width: 100%;
-        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/90aa2e550f32143de931c00d473c8e38ab8ede9f/Content/7%20Offices/Offices-main%20banner-right-image%205.svg');
+        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/0fdb13ff42426dc0a2f0e85d47e6c64da08a40df/Content/7%20Offices/Offices%20banner%205.svg');
     }
 
     .contact-us-text{
@@ -1741,7 +1742,7 @@ gap: var(--Spacing-Spacing-Sm, 0.5rem);
 @media screen and (max-width: 1144px) {
     .header-image {
         width: 100%;
-        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/90aa2e550f32143de931c00d473c8e38ab8ede9f/Content/7%20Offices/Offices-main%20banner-right-image%206.svg');
+        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/0fdb13ff42426dc0a2f0e85d47e6c64da08a40df/Content/7%20Offices/Offices%20banner%206.svg');
     }
 }
 
@@ -1922,7 +1923,7 @@ gap: var(--Spacing-Spacing-Sm, 0.5rem);
         order: 1;
         width: 100%;
         height: 16rem;
-        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/90aa2e550f32143de931c00d473c8e38ab8ede9f/Content/7%20Offices/Offices-full-image.svg');
+        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/0fdb13ff42426dc0a2f0e85d47e6c64da08a40df/Content/7%20Offices/Offices%20Full%20image.svg');
     }
 
 
@@ -2382,7 +2383,7 @@ h4 {
 
 .header-image {
     height: 12rem;
-    background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/90aa2e550f32143de931c00d473c8e38ab8ede9f/Content/7%20Offices/Offices-full-image.svg');
+    background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/0fdb13ff42426dc0a2f0e85d47e6c64da08a40df/Content/7%20Offices/Offices%20Full%20image.svg');
 }
 
 .help-section h3 {
