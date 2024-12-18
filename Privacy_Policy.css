@@ -154,7 +154,6 @@ a {
     text-decoration: none;
     width: auto;
     color: inherit; /* Inherits the color from the parent element */
-
 }
 
 /* Dropdown Container */
@@ -1042,7 +1041,7 @@ line-height: 1.25rem; /* 133.333% */
 
 .contact-image {
     flex: 0.8;
-    background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/be2a1f689e02fa04aeaa036568707ebb51c56fd1/Content/why-choose-us.svg'); /* Replace with the path to your image */
+    background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/951fe0ee6ee3bf203933c59486b2a45e7211aed5/Content/why%20choose%20us%20high%20res.svg'); /* Replace with the path to your image */
     background-size: cover;
     background-position: center;
     clip-path: polygon(20% 0%, 100% 30%, 85% 100%, 26% 95%);
@@ -1219,7 +1218,7 @@ footer {
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     margin-left: 8%;
     margin-right: 8%;
@@ -1233,6 +1232,7 @@ footer {
 .footer-column {
     flex: 1;
     min-width: 200px;
+    max-width: 300px;
     margin: 10px;
     height: auto;
 }
