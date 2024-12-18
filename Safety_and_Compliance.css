@@ -496,7 +496,7 @@ h1 {
 .header-image {
     width: 100%;
     height: 23.625rem;
-    background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/419e3349f97912b5edb42ac5e61c305484ec39c9/Content/Safety%20Main%20banner/Safety_main%20banner-right-image%201.svg');
+    background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/d0ef106a46ab08a170757bc30d9461611fdfd7b5/Content/Safety%20Main%20banner/Safety%201.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1064,7 +1064,7 @@ line-height: 1.25rem; /* 133.333% */
 
 .contact-image {
     flex: 0.8;
-    background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/be2a1f689e02fa04aeaa036568707ebb51c56fd1/Content/why-choose-us.svg'); /* Replace with the path to your image */
+    background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/951fe0ee6ee3bf203933c59486b2a45e7211aed5/Content/why%20choose%20us%20high%20res.svg'); /* Replace with the path to your image */
     background-size: cover;
     background-position: center;
     clip-path: polygon(20% 0%, 100% 30%, 85% 100%, 26% 95%);
@@ -1377,7 +1377,7 @@ li:hover {
 @media screen and (max-width: 1676px) {
     .header-image {
         width: 100%;
-        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/0dd70db1d9ace095c156ce48c96fb6e3ab0ce1bb/Content/Safety%20Main%20banner/Safety_main%20banner-right-image%202.svg');
+        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/d0ef106a46ab08a170757bc30d9461611fdfd7b5/Content/Safety%20Main%20banner/Safety%202.svg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -1405,7 +1405,7 @@ li:hover {
 @media screen and (max-width: 1578px) {
     .header-image {
         width: 100%;
-        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/0dd70db1d9ace095c156ce48c96fb6e3ab0ce1bb/Content/Safety%20Main%20banner/Safety_main%20banner-right-image%203.svg');
+        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/d0ef106a46ab08a170757bc30d9461611fdfd7b5/Content/Safety%20Main%20banner/Safety%203.svg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -1424,7 +1424,7 @@ li:hover {
 @media screen and (max-width: 1520px) {
     .header-image {
         width: 100%;
-        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/0dd70db1d9ace095c156ce48c96fb6e3ab0ce1bb/Content/Safety%20Main%20banner/Safety_main%20banner-right-image%204.svg');
+        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/d0ef106a46ab08a170757bc30d9461611fdfd7b5/Content/Safety%20Main%20banner/Safety%204.svg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -1493,7 +1493,7 @@ li:hover {
 @media screen and (max-width: 1345px) {
     .header-image {
         width: 100%;
-        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/0dd70db1d9ace095c156ce48c96fb6e3ab0ce1bb/Content/Safety%20Main%20banner/Safety_main%20banner-right-image%205.svg');
+        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/d0ef106a46ab08a170757bc30d9461611fdfd7b5/Content/Safety%20Main%20banner/Safety%205.svg');
     }
 
     .contact-us-text{
@@ -1746,7 +1746,7 @@ li:hover {
 @media screen and (max-width: 1144px) {
     .header-image {
         width: 100%;
-        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/0dd70db1d9ace095c156ce48c96fb6e3ab0ce1bb/Content/Safety%20Main%20banner/Safety_main%20banner-right-image%206.svg');
+        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/d0ef106a46ab08a170757bc30d9461611fdfd7b5/Content/Safety%20Main%20banner/Safety%206.svg');
     }
 }
 
@@ -1906,7 +1906,7 @@ li:hover {
         order: 1;
         width: 100%;
         height: 16rem;
-        background-image: url('https://github.com/Eganbros/EganBros-website/blob/main/Content/Safety%20Main%20banner/Safety-header%20Full%20image%203.jpg?raw=true');
+        background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/d0ef106a46ab08a170757bc30d9461611fdfd7b5/Content/Safety%20Main%20banner/Safety%20full%20image.svg');
     }
 
 
@@ -2374,7 +2374,7 @@ h4 {
 
 .header-image {
     height: 12rem;
-    background-image: url('https://github.com/Eganbros/EganBros-website/blob/main/Content/Safety%20Main%20banner/Safety-header%20Full%20image%203.jpg?raw=true');
+    background-image: url('https://raw.githubusercontent.com/Eganbros/EganBros-website/d0ef106a46ab08a170757bc30d9461611fdfd7b5/Content/Safety%20Main%20banner/Safety%20full%20image.svg');
 }
 
 .help-section h3 {
