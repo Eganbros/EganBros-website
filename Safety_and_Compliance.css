@@ -523,7 +523,7 @@ h4 {
     color: var(--Navy, #F5F5F5);
     text-align: center;
     font-family: Inter;
-    font-size: 2.625rem;
+    font-size: 2.3rem;
     font-style: normal;
     font-weight: 400;
     line-height: 114%; /* 2.9925rem */
@@ -614,8 +614,16 @@ p {
     align-items: stretch; /* Ensure items stretch to match the tallest item */
     padding: 6.25rem 8%;
     gap: 5%; /* Adjust gap between items */
-    height: 20rem;
+    height: 68rem;
     position: relative; /* Ensure the stroke is positioned relative to .services */
+}
+
+.service-content h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.;
+    padding-right: 5rem;
 }
 
 .commercial {
@@ -628,7 +636,23 @@ p {
 }
 
 .service-content{
-    width: 43rem;
+    width: 55rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.service-content b{
+    font-weight: 500;
+}
+
+.service-content .ul-two{
+    padding-bottom: 1rem; 
+}
+
+.service-content .ul-two li{
+    padding-bottom: 0rem; 
 }
 
 
@@ -705,9 +729,16 @@ ul{
 
 
 
-.service-content ul {
+.service-content .ul-one {
     padding-left: 2rem;
+    padding-bottom: 2rem;
 }
+
+.service-content .ul-one {
+
+    border-bottom: 1px solid #EFEFEF;
+}
+
 
 
 .residential-wrapper {
@@ -799,10 +830,15 @@ ul{
 
 .pricing-cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 8%;
     width: 100%;
+}
+
+.icons-multiple{
+    display: flex;
+    flex-direction: row;
 }
 
 .pricing-card-item {
@@ -926,8 +962,9 @@ ul{
     background-color: #F3F5F9;
 }
 
-.immersive{
+.immersive, .premium{
     background: #EBF2FE;
+    height: 32rem;
 }
 
 
@@ -1093,6 +1130,10 @@ line-height: 1.25rem; /* 133.333% */
 }
 
 
+.princing-style{
+    display: flex;
+    flex-direction: column;
+}
 
 
 
@@ -1203,7 +1244,7 @@ footer {
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     margin-left: 8%;
     margin-right: 8%;
@@ -1217,6 +1258,7 @@ footer {
 .footer-column {
     flex: 1;
     min-width: 200px;
+    max-width: 300px;
     margin: 10px;
     height: auto;
 }
@@ -1331,6 +1373,7 @@ li:hover {
 
 
 
+
 @media screen and (max-width: 1676px) {
     .header-image {
         width: 100%;
@@ -1397,16 +1440,53 @@ li:hover {
 }
 
 @media screen and (max-width: 1492px) {
-    .pricing-cards {
-        transform: scale(0.8); /* Scale everything inside the container by 70% */
-        transform-origin: top left; /* Ensure scaling starts from the top left corner */
-        width: 125%;
-    }
+
 
     .plan-pricing{
-        height:39rem ;
+        height:40rem ;
     }
     
+}
+
+@media screen and (max-width: 1480px) {
+
+    .service-content ul {
+        padding-left: 0.5rem;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: left;
+        height: auto;
+        gap: 2.3rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+    }
+
+    .service-item {
+        margin-right: 0;
+        margin-bottom: 0rem; /* Add margin between stacked items */
+        order: 1;
+    }
+
+    .residential-wrapper img {
+        width: 100%;
+        clip-path: none; /* Remove clip-path for better display on small screens */
+        object-fit: cover;
+        height: 15rem ;
+        order: 0;
+    }
+
+    .residential-wrapper {
+        width: 100%; /* Ensures the image wrapper takes full width */
+        height: 10rem;
+    }
+
+    .service-content{
+        padding-left: 1rem;
+        width: auto;
+    }
 }
 
 
@@ -1429,6 +1509,12 @@ li:hover {
    
 }
 
+@media screen and (max-width: 1330px) {
+    .plan-pricing {
+        height: 42rem;
+    }
+}
+
 @media screen and (max-width: 1326px) {
 
     .pricing-cards {
@@ -1439,7 +1525,7 @@ li:hover {
 
     .plan-pricing{
         align-items: center;
-        height: 68rem ;
+        /* height: 68rem ; */
     }
 
     .pricing-cards{
@@ -1454,9 +1540,9 @@ li:hover {
         width: 100%;
     }
     
-    .pricing-card-item{
+    /* .pricing-card-item{
         height: 27.5rem;
-    }
+    } */
 
 }
  
@@ -1619,9 +1705,9 @@ li:hover {
         width: 37rem;
     }
 
-    .service-content {
+    /* .service-content {
         width: 37rem;
-    }
+    } */
 
     .plan-pricing {
         padding-bottom: 0rem;
@@ -1704,7 +1790,7 @@ li:hover {
 
 
     .services {
-        height: 16rem;
+        /* height: 16rem; */
         padding-top: 4rem;
         padding-bottom: 4rem;
     }
@@ -1714,7 +1800,7 @@ li:hover {
         line-height: 1.4;
     }
 
-    .service-content ul li, .contact-info h3 {
+    .service-content ul li, .contact-info h3, .service-item h3 {
         font-size: 1rem;
     }
 
@@ -1728,6 +1814,11 @@ li:hover {
 
     .service-title, .service-content {
         width: 33.8rem;
+
+    }
+
+    .service-content {
+        width: auto;
 
     }
 
@@ -1868,7 +1959,7 @@ li:hover {
 
     .plan-pricing{
         align-items: center;
-        height: 63rem ;
+        /* height: 63rem ; */
     }
 
     .help-section{
@@ -1899,7 +1990,7 @@ li:hover {
     }
 
     .plan-pricing{
-        height: 56rem ;
+        height: 34rem ;
         gap: 2.6rem ;
     }
 
@@ -1949,7 +2040,7 @@ li:hover {
     }
 
     .service-content {
-        width: 100%;
+        width: auto;
     }
 
     .service-title {
@@ -2103,7 +2194,7 @@ li:hover {
     }
 
     .plan-pricing{
-        height: 54rem ;
+        height: 35rem ;
 
     }
 
@@ -2151,8 +2242,12 @@ li:hover {
     transform: scale(0.7); 
 }
 
-.plan-pricing {
-    height: 77rem;
+.plan-pricing  {
+    height: 60rem;
+}
+
+#single-line {
+    height: 38rem;
 }
 
 
@@ -2207,7 +2302,7 @@ li:hover {
 @media screen and (max-width: 588px) {
 
 .plan-pricing {
-    height: 79rem;
+    height: 60rem;
 }
 }
 
@@ -2462,9 +2557,9 @@ h4 {
         width: 4rem;
     }
 
-    .service-item h3 {
+    /* .service-item h3 {
         font-size: 1.25rem;
-    }
+    } */
 
     .service-content ul li, .contact-info h3, .contact-info ul li {
         font-size: 0.875rem;
@@ -2481,7 +2576,12 @@ h4 {
     .plan-pricing {
         gap: 2rem;
         padding-top: 2rem;
-        height: 68rem;
+        height: 50rem;
+    }
+
+    #single-line{
+        height: 32rem;
+
     }
 
     .service-title img {
@@ -2646,24 +2746,28 @@ h4 {
 
     .plan-pricing {
         gap: 2rem;
-        height: 62.5rem;
+        height: 48rem;
     }
 
     .pricing-card-item{
-        height: 26rem;
+        height: 30rem;
     }
 
     .premium {
-        height: 26rem;
+        height: 32rem;
     }
 
     .immersive {
-        height: 28rem;
+        height: 32rem;
     }
 
     .title-pricing p {
         font-size: 0.8rem;
         line-height: 1.2rem;
+    }
+
+    .title-pricing h2{
+        text-align: left;
     }
 
 }
@@ -2678,7 +2782,7 @@ h4 {
 
     .plan-pricing {
         gap: 2rem;
-        height: 62rem;
+        height: 43rem;
     }
 
     .pricing-card-item{
@@ -2708,7 +2812,7 @@ h4 {
     }
 
     .plan-pricing {
-        height: 60rem;
+        height: 42rem;
     }
 
 }
@@ -2758,15 +2862,16 @@ h4 {
     }
 
     .plan-pricing {
-        height: 56rem;
+        height: 39rem;
     }
-
-
-
 
 }
 
-
+@media screen and (max-width: 348px) {
+    .plan-pricing {
+        height: 40rem;
+    }
+}
 @media screen and (max-width: 330px) {
 
     .pricing-cards {
@@ -2777,7 +2882,7 @@ h4 {
 
     .plan-pricing {
         gap: 2rem;
-        height: 53rem;
+        height: 39rem;
     }
 
     .pricing-card-item{
@@ -2807,7 +2912,7 @@ h4 {
     }
 
     .plan-pricing {
-        height: 46.5rem;
+        height: 35rem;
     }
 
 
@@ -2816,6 +2921,6 @@ h4 {
 @media screen and (max-width: 305px) {
 
 .plan-pricing {
-    height: 46.5rem;
+    height: 34rem;
 }
 }
