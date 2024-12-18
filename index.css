@@ -518,7 +518,7 @@ h2 {
     padding: 3.75rem 10rem;
     flex-direction: column;
     align-items: center;
-    gap: 2.625rem;
+    gap: 3.625rem;
     background: #FFF;
     height: 100%;
 }
@@ -545,12 +545,12 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4.64263rem;
+    gap: 4.8rem;
     opacity: 0.5;
 }
 
 .logo-height{
-    height: 5.6rem !important;
+    height: 9rem !important;
 }
 
 .partner-section-bottom {
@@ -747,7 +747,7 @@ p {
 
 .deployment {
     text-align: center;
-    background: #fff;
+    background: #ebebeb;
     padding: 6rem 8rem 8.75rem 10rem;
     align-items: center;
     height: auto;
@@ -794,7 +794,7 @@ p {
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 300;
-    line-height: 2.25rem; /* 180% */
+    line-height: 1.6rem; /* 180% */
 }
 
 .divider {
@@ -920,7 +920,7 @@ footer {
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     margin-left: 8%;
     margin-right: 8%;
@@ -934,6 +934,7 @@ footer {
 .footer-column {
     flex: 1;
     min-width: 200px;
+    max-width: 300px;
     margin: 10px;
     height: auto;
 }
@@ -1200,8 +1201,15 @@ li:hover {
 }
 }
 
+@media screen and (max-width: 1214px) {
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
 
 
+}
 
 
 @media screen and (max-width: 1160px) {
@@ -1485,7 +1493,7 @@ li:hover {
     }
 
     .logo-height{
-        height: 4rem!important;
+        height: 8rem!important;
     }
 
     .services{
@@ -1589,7 +1597,7 @@ li:hover {
 @media screen and (max-width: 730px) {
 
     .logo-height{
-        height: 3rem!important;
+        height: 6rem!important;
     }
 
     .partner-section-bottom{
@@ -1807,6 +1815,12 @@ footer {
     padding-left: 0;
     padding-right: 0;
 }
+
+
+    .logo-height{
+        height: 5rem!important;
+    }
+
 }
 
 
@@ -1926,7 +1940,7 @@ footer {
 @media screen and (max-width: 430px) {
 
     .logo-height{
-        height: 2rem!important;
+        height: 4rem!important;
     }
 
     .main-header-text h1 {
