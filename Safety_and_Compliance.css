@@ -622,8 +622,7 @@ p {
     font-family: 'Inter', sans-serif;
     font-size: 1.1rem;
     font-weight: 300;
-    line-height: 1.;
-    padding-right: 5rem;
+    line-height: 1.75rem;
 }
 
 .commercial {
@@ -2247,7 +2246,7 @@ li:hover {
 }
 
 #single-line {
-    height: 38rem;
+    height: 36rem;
 }
 
 
@@ -2476,6 +2475,11 @@ h4 {
 }
 
 .title-pricing p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+}
+
+.service-content h3{
     font-size: 0.9rem;
     line-height: 1.2rem;
 }
@@ -2770,6 +2774,11 @@ h4 {
         text-align: left;
     }
 
+    .service-content h3{
+        font-size: 0.0.875rem;
+        line-height: 1.2rem;
+    }
+
 }
 
 @media screen and (max-width: 374px) {
@@ -2782,19 +2791,19 @@ h4 {
 
     .plan-pricing {
         gap: 2rem;
-        height: 43rem;
+        height: 46rem;
     }
 
     .pricing-card-item{
-        height: 26rem;
+        height: 28rem;
     }
 
     .premium {
-        height: 26rem;
+        height: 32rem;
     }
 
     .immersive {
-        height: 28rem;
+        height: 32rem;
     }
 
     .title-pricing p {
@@ -2812,7 +2821,7 @@ h4 {
     }
 
     .plan-pricing {
-        height: 42rem;
+        height: 45rem;
     }
 
 }
@@ -2862,14 +2871,19 @@ h4 {
     }
 
     .plan-pricing {
-        height: 39rem;
+        height: 42rem;
+    
+    }
+
+    #single-line{
+        height: 30rem;
     }
 
 }
 
 @media screen and (max-width: 348px) {
     .plan-pricing {
-        height: 40rem;
+        height: 42rem;
     }
 }
 @media screen and (max-width: 330px) {
@@ -2882,7 +2896,11 @@ h4 {
 
     .plan-pricing {
         gap: 2rem;
-        height: 39rem;
+        height: 38rem;
+    }
+
+    #single-line{
+        height: 28rem;
     }
 
     .pricing-card-item{
@@ -2890,11 +2908,11 @@ h4 {
     }
 
     .premium {
-        height: 26rem;
+        height: 32rem;
     }
 
     .immersive {
-        height: 28rem;
+        height: 32rem;
     }
 
     .title-pricing p {
@@ -2911,9 +2929,7 @@ h4 {
         transform: scale(0.4);     
     }
 
-    .plan-pricing {
-        height: 35rem;
-    }
+
 
 
 }
