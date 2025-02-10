@@ -1679,6 +1679,12 @@ li:hover {
     .contact-info h2 {
         font-size: 1.3rem;
     }
+
+    .service-title img {
+        width: 1.7rem;
+        height: 1.7rem;
+        padding-top: 0.4rem;
+    }
 }
 
 @media screen and (max-width: 1144px) {
@@ -1732,6 +1738,13 @@ li:hover {
         padding-top: 4rem;
         padding-bottom: 4rem;
     }
+
+
+/* .service-title img {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding-top: 0.4rem;
+} */
     
     .quality-management{
         height: 25rem;
