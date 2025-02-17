@@ -908,7 +908,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.25rem;
+    gap: 2rem;
 }
 
 footer {
@@ -1050,7 +1050,7 @@ li:hover {
 }
 
 .iso {
-    width: 6rem ;
+    width: 6.5rem ;
 }
 
 
@@ -1527,7 +1527,7 @@ li:hover {
     }
 
     .certification-item {
-        gap: 0.5rem;
+        gap: 1rem;
 }
 
 
@@ -1645,15 +1645,20 @@ li:hover {
     }
 
     
-
-
 }
 
-@media screen and (max-width: 662px) {
+
+
+@media screen and (max-width: 684px) {
 
 .certification-item:nth-child(3) {
     margin-top: 2rem; /* Add space after the third item */
 }
+}
+
+@media screen and (max-width: 662px) {
+
+
 
 .main-header-text {
     margin-left: 0px;
@@ -1898,7 +1903,7 @@ footer {
 
 @media screen and (max-width: 440px) {
 
-    .certification-item:nth-child(3) {
+    .certification-item:nth-child(3)  {
         margin-top: 0rem; /* Add space after the third item */
     }
 
@@ -1917,7 +1922,7 @@ footer {
     }
 
     .iso {
-        width: 50% !important;
+        width: 80% !important;
     }
 
     .feedback{
@@ -2024,10 +2029,10 @@ footer {
         margin-bottom: 2rem;
     }
 
-    .deployment {
+    /* .deployment {
         margin-top: 1rem;
         margin-bottom: 1rem;
-    }
+    } */
 
     .card-text {
         padding: 16px;
